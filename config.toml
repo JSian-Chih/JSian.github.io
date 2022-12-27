@@ -1,7 +1,7 @@
 baseURL = 'https://jsian-chih.github.io/JSian.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-<<<<<<< HEAD
+
 theme = 'ananke'
 
 [[params.social]]
@@ -13,6 +13,3 @@ name = "github"
 url = "https://github.com/JSian-Chih"
 
 
-=======
-theme = 'ananke'
->>>>>>> 26419b2e378c17d21131e8856c5ff4f2b3d60e59
