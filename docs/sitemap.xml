@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jsian-chih.github.io/JSian.github.io/categories/</loc>
+    <loc>https://jsian-chih.github.io/JSian.github.io/archives/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
   </url><url>
-    <loc>https://jsian-chih.github.io/JSian.github.io/</loc>
+    <loc>https://jsian-chih.github.io/JSian.github.io/categories/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/tags/example-tag/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/p/hello-world/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/page/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/post/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
   </url><url>
     <loc>https://jsian-chih.github.io/JSian.github.io/tags/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/categories/example-category/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/links/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/search/</loc>
+    <lastmod>2022-10-30T10:19:12+08:00</lastmod>
   </url>
 </urlset>

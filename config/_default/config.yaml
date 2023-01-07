@@ -1,0 +1,44 @@
+baseURL: https://jsian-chih.github.io/JSian.github.io/
+languageCode: en-us
+title: Sian's blog
+
+theme: hugo-theme-stack
+
+favicon: favicon.ico
+
+# params.social:
+#   name: email
+#   url: mailto:jsian.chih@gmail.com
+
+# params.social:
+#   name: github
+#   url: https://github.com/JSian-Chih
+
+
+hasCJKLanguage: false
+unsafe: true
+
+params:
+# mainSections:
+#     # - post
+#   featuredImageField: image
+#   rssFullContent: true
+  favicon: favicon.ico
+  sidebar:
+    name: Chih
+
+# Change it to your Disqus shortname before using
+# disqusShortname:
+
+# GA Tracking ID
+googleAnalytics:
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl, it
+DefaultContentLanguage: en
+
+# whether to use emoji code
+enableEmoji: true
+
+frontmatter:
+  lastmod: :fileModTime
