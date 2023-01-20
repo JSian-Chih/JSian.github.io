@@ -11,8 +11,6 @@ tags:
 # draft: true
 ---
 
-[TOC]
-
 <style>
 .red {
   color: red;
