@@ -16,7 +16,7 @@ DefaultContentLanguage: en
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
@@ -151,14 +151,14 @@ params:
         homepage:
             - type: search
             - type: archives
-              params:
-                  limit: 5
+                params:
+                    limit: 5
             - type: categories
-              params:
-                  limit: 10
+                params:
+                    limit: 10
             - type: tag-cloud
-              params:
-                  limit: 10
+                params:
+                    limit: 10
         page:
             - type: toc
 
@@ -197,10 +197,10 @@ menu:
 
     social:
         - identifier: github
-          name: GitHub
-          url: https://github.com/JSian-Chih
-          params:
-              icon: brand-github
+            name: GitHub
+            url: https://github.com/JSian-Chih
+            params:
+                icon: brand-github
 
         # - identifier: twitter
         #   name: Twitter
@@ -214,10 +214,10 @@ related:
     toLower: false
     indices:
         - name: tags
-          weight: 100
+            weight: 100
 
         - name: categories
-          weight: 200
+            weight: 200
 
 markup:
     goldmark:
