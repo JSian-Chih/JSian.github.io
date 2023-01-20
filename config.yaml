@@ -23,6 +23,23 @@ permalinks:
     page: /:slug/
 
 params:
+    customcss:
+        # - "css/xx.css"
+    customjs:
+        - "js/snow.js"
+    customjscssraw:
+        - "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css' integrity='sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=' crossorigin='anonymous'>"
+        - >
+            <script async src='https://www.googletagmanager.com/gtag/js?id=G-XXX'></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-XXX');
+            </script>
+
+
     mainSections:
         - post
     featuredImageField: image
@@ -39,7 +56,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: わが征くは星の大海
         avatar:
             enabled: true
             local: true
@@ -181,15 +198,15 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/JSian-Chih
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        # - identifier: twitter
+        #   name: Twitter
+        #   url: https://twitter.com
+        #   params:
+        #       icon: brand-twitter
 
 related:
     includeNewer: true
