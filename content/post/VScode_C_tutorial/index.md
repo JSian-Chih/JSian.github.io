@@ -1,7 +1,8 @@
 ---
 title: "C++ programming with Visual Studio Code (Using gcc/g++ with MinGW)"
+slug: VScode_C_tutorial
 date: 2023-01-20T15:03:43+08:00
-image: https://wallroom.io/img/1920x1080/bg-1c623bd.png
+image: cover.jpg
 categories:
   - Programming
 tags:
