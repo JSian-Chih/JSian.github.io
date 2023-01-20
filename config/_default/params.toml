@@ -22,7 +22,7 @@ local = true
 src = "img/AXReMHj.jpg"
 
 # custom_css = ["css/xx.css"]
-custom_js = ["js/snow.js"]
+# custom_js = ["js/snow.js"]
 
 
 [article]

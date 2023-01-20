@@ -15,10 +15,10 @@ url = "https://github.com/JSian-Chih"
 [social.params]
 icon = "brand-github"
 
-# [[social]]
-# identifier = "twitter"
-# name = "Twitter"
-# url = "https://twitter.com"
+[[social]]
+identifier = "linkedin"
+name = "Linkedin"
+url = "https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/"
 
-# [social.params]
-# icon = "brand-twitter"
+[social.params]
+icon = "brand-linkedin"
