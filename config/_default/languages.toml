@@ -1,7 +1,9 @@
 # Uncomment this file to enable multilanguage site support
 
-#[en]
-#languageName = "English"
-#languagedirection = "ltr"
-#title = "Example Site"
-#weight = 1
+[en]
+    languageName = 'English'
+    languageCode = "en-us"
+
+[zh]
+    languageName = '中文'
+    languageCode = "zh-tw"

@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='搭建 VScode 的LaTeX 編寫環境 安裝 texlive 與 VScode For Windows 系統 進入texlive 下載頁面，點擊 「install-tl-windows.exe」。 使用「工作管理'>
+<title>搭建 VScode 的LaTeX 編寫環境</title>
+
+<link rel='canonical' href='https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/'>
+
+<link rel="stylesheet" href="/JSian.github.io/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='搭建 VScode 的LaTeX 編寫環境'>
+<meta property='og:description' content='搭建 VScode 的LaTeX 編寫環境 安裝 texlive 與 VScode For Windows 系統 進入texlive 下載頁面，點擊 「install-tl-windows.exe」。 使用「工作管理'>
+<meta property='og:url' content='https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/'>
+<meta property='og:site_name' content='Sian&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='VScode' /><meta property='article:tag' content='LaTeX' /><meta property='article:published_time' content='2023-01-20T15:46:22&#43;08:00'/><meta property='article:modified_time' content='2023-01-20T15:46:22&#43;08:00'/><meta property='og:image' content='https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/cover.jpg' />
+<meta name="twitter:title" content="搭建 VScode 的LaTeX 編寫環境">
+<meta name="twitter:description" content="搭建 VScode 的LaTeX 編寫環境 安裝 texlive 與 VScode For Windows 系統 進入texlive 下載頁面，點擊 「install-tl-windows.exe」。 使用「工作管理"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/cover.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+<script src="https://jsian-chih.github.io/JSian.github.io/js/snow.js"></script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/JSian.github.io/zh/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/JSian.github.io/img/AXReMHj_hufed4864fa0b2c0adfd2fe9e6c736dfe6_73944_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/JSian.github.io/zh">Sian&#39;s Blog</a></h1>
+            <h2 class="site-description">わが征くは星の大海</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/JSian-Chih'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/'
+                        target="_blank"
+                        title="Linkedin"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/en' >
+                
+                
+                
+                <span>English</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://jsian-chih.github.io/JSian.github.io/zh/" selected>中文</option>
+                        
+                            <option value="https://jsian-chih.github.io/JSian.github.io/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#安裝-texlive-與-vscode">安裝 texlive 與 VScode</a>
+      <ol>
+        <li><a href="#for-windows-系統">For Windows 系統</a></li>
+      </ol>
+    </li>
+    <li><a href="#在-vscode-上配置環境">在 VScode 上配置環境</a></li>
+    <li><a href="#完成">完成!</a></li>
+    <li><a href="#追加介紹-使用sumatrapdf-外部程式閱讀編譯後的pdf並配置正向和反向搜索">追加介紹: 使用SumatraPDF 外部程式閱讀編譯後的pdf並配置正向和反向搜索。</a>
+      <ol>
+        <li><a href="#why-sumatrapdf-">Why SumatraPDF ?</a></li>
+        <li><a href="#安裝與配置">安裝與配置</a></li>
+        <li><a href="#正向搜索">正向搜索</a></li>
+        <li><a href="#反向搜索">反向搜索</a></li>
+      </ol>
+    </li>
+    <li><a href="#追加介紹-使用sioyek-外部程式閱讀編譯後的pdf並配置正向和反向搜索">追加介紹: 使用Sioyek 外部程式閱讀編譯後的pdf並配置正向和反向搜索。</a>
+      <ol>
+        <li><a href="#why-sioyek">Why Sioyek?</a></li>
+        <li><a href="#安裝與配置正向收尋">安裝與配置正向收尋</a></li>
+        <li><a href="#反向搜尋">反向搜尋</a></li>
+      </ol>
+    </li>
+    <li><a href="#追加介紹-latex-編譯的中間產物與注意事項">追加介紹: LaTeX 編譯的中間產物與注意事項</a></li>
+    <li><a href="#追加介紹-快捷鍵修改與自定義">追加介紹: 快捷鍵修改與自定義</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/JSian.github.io/zh/p/vscode_latex_tutorial/">
+                <img src="/JSian.github.io/zh/p/vscode_latex_tutorial/cover_hu18be54e43eafcc95dcec893c1e1a7622_3588945_800x0_resize_q75_box.jpg"
+                        srcset="/JSian.github.io/zh/p/vscode_latex_tutorial/cover_hu18be54e43eafcc95dcec893c1e1a7622_3588945_800x0_resize_q75_box.jpg 800w, /JSian.github.io/zh/p/vscode_latex_tutorial/cover_hu18be54e43eafcc95dcec893c1e1a7622_3588945_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/JSian.github.io/zh/categories/programming/" >
+                Programming
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/JSian.github.io/zh/p/vscode_latex_tutorial/">搭建 VScode 的LaTeX 編寫環境</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 20, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <style>
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+</style>
+<h1 id="搭建-vscode-的latex-編寫環境">搭建 VScode 的LaTeX 編寫環境</h1>
+<h2 id="安裝-texlive-與-vscode">安裝 texlive 與 VScode</h2>
+<h3 id="for-windows-系統">For Windows 系統</h3>
+<ol>
+<li>進入<a class="link" href="https://tug.org/texlive/acquire-netinstall.html"  target="_blank" rel="noopener"
+    >texlive 下載頁面</a>，點擊 「install-tl-windows.exe」。</li>
+</ol>
+<p><img src="https://i.imgur.com/b15bjTj.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="2">
+<li>使用「工作管理員」，開啟「install-tl-windows.exe」。</li>
+</ol>
+<p><img src="https://i.imgur.com/DquIRDL.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="3">
+<li>選擇「install」，點「next」。</li>
+</ol>
+<p><img src="https://i.imgur.com/ikCWYJl.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="4">
+<li>點「install」。</li>
+</ol>
+<p><img src="https://i.imgur.com/tlAl6El.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="5">
+<li>選擇安裝路徑，點「install」。</li>
+</ol>
+<p><img src="https://i.imgur.com/NtLc4XD.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="6">
+<li>直到看到這句話就代表安裝完成。<span class="red">(安裝時間可能高達數小時，這是正常的)</span></li>
+</ol>
+<p><img src="https://i.imgur.com/YAdgGov.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="7">
+<li>VScode 的安裝可參考: <a class="link" href="/ICMRU7uUQuebYsc_LeL-Ug" >C++ programming with Visual Studio Code (Using gcc/g++ with MinGW)</a></li>
+</ol>
+<h2 id="在-vscode-上配置環境">在 VScode 上配置環境</h2>
+<ol>
+<li>搜尋「LaTeX Workshop」擴充插件，安裝。</li>
+</ol>
+<p><img src="https://i.imgur.com/Wyjsq0C.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ol start="2">
+<li>打開VScode，按<code>crtl+P</code>或<code>F1</code>打開命令行。輸入<code>&gt;settings (JSON)</code>。選擇「Open User Setting」。</li>
+</ol>
+<p><img src="https://i.imgur.com/6XHDv6X.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ol start="3">
+<li>複製以下程式碼加入「setting.json」。此部分定義:pdf的閱讀方式，自動編譯與訊息的表示方式等細項。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    // LaTeX 配置
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.view.pdf.viewer&#34;: &#34;tab&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.latex.autoBuild.run&#34;: &#34;never&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.showContextMenu&#34;: true,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.intellisense.package.enabled&#34;: true,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.message.error.show&#34;: false,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.message.warning.show&#34;: false,
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>複製以下程式碼加入「setting.json」。此部分定義:LaTeX 的編譯工具。LaTeX Workshop 默認的編譯工具為latexxmk。這裡加入中文環境常用的xelatex，IEEE用的pdflatex，交互參照參考文獻要用的bibtex。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    &#34;latex-workshop.latex.tools&#34;: [
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;xelatex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;command&#34;: &#34;xelatex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;args&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;-shell-escape&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-synctex=1&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-interaction=nonstopmode&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-file-line-error&#34;,
+</span></span><span class="line"><span class="cl">                &#34;%DOCFILE%&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;pdflatex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;command&#34;: &#34;pdflatex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;args&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;-shell-escape&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-synctex=1&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-interaction=nonstopmode&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-file-line-error&#34;,
+</span></span><span class="line"><span class="cl">                &#34;%DOCFILE%&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;latexmk&#34;,
+</span></span><span class="line"><span class="cl">            &#34;command&#34;: &#34;latexmk&#34;,
+</span></span><span class="line"><span class="cl">            &#34;args&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;-shell-escape&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-synctex=1&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-interaction=nonstopmode&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-file-line-error&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-pdf&#34;,
+</span></span><span class="line"><span class="cl">                &#34;-outdir=%OUTDIR%&#34;,
+</span></span><span class="line"><span class="cl">                &#34;%DOCFILE%&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;bibtex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;command&#34;: &#34;bibtex&#34;,
+</span></span><span class="line"><span class="cl">            &#34;args&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;%DOCFILE%&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    ],
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>複製以下程式碼加入「setting.json」。此部分定義:LaTeX 的編譯鏈，決定編譯的順序與方式。<span class="red">放在首位的將被定義為默認的編譯方式。</span> 需要編譯bib檔案的情況下須使用<code>&quot;xelatex -&gt; bibtex -&gt; xelatex*2&quot;</code> 或 <code>&quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;</code> 編譯。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    &#34;latex-workshop.latex.recipes&#34;: [
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;XeLaTeX&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;xelatex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;PDFLaTeX&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;pdflatex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;BibTeX&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;bibtex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;LaTeXmk&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;latexmk&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;xelatex -&gt; bibtex -&gt; xelatex*2&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;xelatex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;bibtex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;xelatex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;xelatex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {
+</span></span><span class="line"><span class="cl">            &#34;name&#34;: &#34;pdflatex -&gt; bibtex -&gt; pdflatex*2&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;pdflatex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;bibtex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;pdflatex&#34;,
+</span></span><span class="line"><span class="cl">                &#34;pdflatex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        {&#34;name&#34;: &#34;xelatex*2&#34;,
+</span></span><span class="line"><span class="cl">            &#34;tools&#34;: [
+</span></span><span class="line"><span class="cl">                &#34;xelatex&#34;,&#34;xelatex&#34;
+</span></span><span class="line"><span class="cl">            ]
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">    ],
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>複製以下程式碼加入「setting.json」。此部分定義:自動清除編譯的中間產物。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    &#34;latex-workshop.latex.clean.fileTypes&#34;: [
+</span></span><span class="line"><span class="cl">        // &#34;*.aux&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.bbl&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.blg&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.idx&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.ind&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.lof&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.lot&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.out&#34;,
+</span></span><span class="line"><span class="cl">        // &#34;*.toc&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.acn&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.acr&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.alg&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.glg&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.glo&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.gls&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.ist&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.fls&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.log&#34;,
+</span></span><span class="line"><span class="cl">        &#34;*.fdb_latexmk&#34;
+</span></span><span class="line"><span class="cl">    ],
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.latex.autoClean.run&#34;: &#34;onFailed&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.latex.recipe.default&#34;: &#34;lastUsed&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.view.pdf.internal.synctex.keybinding&#34;: &#34;double-click&#34;,
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>Remark: 有無最後的逗點取決於:此json檔在這段程式碼後，是否結束。如果接續其他設定，則要加逗號。</p>
+</blockquote>
+<h2 id="完成">完成!</h2>
+<ol>
+<li>到此為止基礎的環境配置已經完成。完成程式碼後，使用<code>crtl+alt+B</code>利用默認的方式編譯。或根據下圖指示編譯方式。使用<code>crtl+alt+V</code>可以快速打開pdf進行預覽。參考: <a class="link" href="/fkOFnbjRRiuxtLj29koTgw" >My LaTeX user guide</a>。</li>
+</ol>
+<p><img src="https://i.imgur.com/zb28joA.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<h2 id="追加介紹-使用sumatrapdf-外部程式閱讀編譯後的pdf並配置正向和反向搜索">追加介紹: 使用SumatraPDF 外部程式閱讀編譯後的pdf並配置正向和反向搜索。</h2>
+<h3 id="why-sumatrapdf-">Why SumatraPDF ?</h3>
+<p>其open souce 與不鎖定pdf 的特性使我們可以自定義其操作環境，輕鬆配置與LaTeX 源碼的正反向搜索。並在開啟pdf 的狀況下依然可以編譯並修改pdf 文件。</p>
+<blockquote>
+<p>Remark: 如果使用內置的pdf閱讀器，不須進行額外配置，即可使用正反像搜索。</p>
+</blockquote>
+<h3 id="安裝與配置">安裝與配置</h3>
+<ol>
+<li>進入<a class="link" href="https://www.sumatrapdfreader.org/download-free-pdf-viewer"  target="_blank" rel="noopener"
+    >下載頁面</a>並下載安裝檔。</li>
+</ol>
+<p><img src="https://i.imgur.com/newkKcJ.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<ol start="2">
+<li>開啟安裝檔，右下角「option」可以顯示安裝選項。完成設定後開始安裝。</li>
+</ol>
+<p><img src="https://i.imgur.com/xfnWmwc.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<ol start="3">
+<li>看到以下畫面代表安裝完成。</li>
+</ol>
+<p><img src="https://i.imgur.com/O6YeYYN.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="link text"
+	
+	
+></p>
+<ol start="4">
+<li>回到VScode， 按<code>crtl+P</code>或<code>F1</code>打開命令行。輸入<code>&gt;settings (JSON)</code>。選擇「Open User Setting」。加入以下兩行。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;latex-workshop.view.pdf.viewer&#34;: &#34;external&#34;,
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34;latex-workshop.view.pdf.external.viewer.command&#34;: &#34;D:/SumatraPDF/SumatraPDF.exe&#34;,
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>至此，SumatraPDF閱讀pdf的配置已完成。</li>
+</ol>
+<h3 id="正向搜索">正向搜索</h3>
+<ol>
+<li>按<code>crtl+P</code>或<code>F1</code>打開命令行。輸入<code>&gt;settings (JSON)</code>。選擇「Open User Setting」。將第一行與第八行的路徑分別改為SumatraPDF與VScode的安裝路徑。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;latex-workshop.view.pdf.external.synctex.args&#34;: [
+</span></span><span class="line"><span class="cl">        &#34;-forward-search&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%TEX%&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%LINE%&#34;,
+</span></span><span class="line"><span class="cl">        &#34;-reuse-instance&#34;,
+</span></span><span class="line"><span class="cl">        &#34;-inverse-search&#34;,
+</span></span><span class="line"><span class="cl">        &#34;\&#34;D:\\Microsoft VS Code\\Code.exe\&#34; \&#34;D:\\Microsoft VS Code\\resources\\app\\out\\cli.js\&#34; --ms-enable-electron-run-as-node -r -g \&#34;%f:%l\&#34;&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%PDF%&#34;
+</span></span><span class="line"><span class="cl">],
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>回到LaTeX 源碼，使用 <code>crtl+alt+J</code> 即可正向收尋到pdf中的相對位置。也可按照下圖操作。</li>
+</ol>
+<p><img src="https://i.imgur.com/tahknvJ.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<h3 id="反向搜索">反向搜索</h3>
+<ol>
+<li>進入SumatraPDF的高級設置文件。</li>
+</ol>
+<p><img src="https://i.imgur.com/h7en0cg.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="link text"
+	
+	
+></p>
+<ol start="2">
+<li>找到:<code>InverseSearchCmdLine</code> 與 <code>EnableTeXEnhancements</code> 這兩個參數。修改為下列所示，注意路徑要與先前安裝的一致。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">InverseSearchCmdLine = &#34;D:\Microsoft VS Code\Code.exe&#34; &#34;D:\Microsoft VS Code\resources\app\out\cli.js&#34; --ms-enable-electron-run-as-node -r -g &#34;%f:%l&#34;
+</span></span><span class="line"><span class="cl">EnableTeXEnhancements = true
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>使用<code>ctrl+alt+V</code>打開pdf文件後，雙擊左鍵即可反向跳轉至LaTeX 源碼的相對位置。</li>
+</ol>
+<h2 id="追加介紹-使用sioyek-外部程式閱讀編譯後的pdf並配置正向和反向搜索">追加介紹: 使用Sioyek 外部程式閱讀編譯後的pdf並配置正向和反向搜索。</h2>
+<h3 id="why-sioyek">Why Sioyek?</h3>
+<p><a class="link" href="https://sioyek.info/"  target="_blank" rel="noopener"
+    >Sioyek </a>為技術性與學術性閱讀開發的pdf閱讀器，一樣擁有open souce 與不鎖定pdf 的特性。</p>
+<h3 id="安裝與配置正向收尋">安裝與配置正向收尋</h3>
+<ol>
+<li>進入<a class="link" href="https://sioyek.info/"  target="_blank" rel="noopener"
+    >官網</a>，點選「download」。選擇Windows版本下載。</li>
+</ol>
+<p><img src="https://i.imgur.com/W93yeKC.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="link text"
+	
+	
+></p>
+<ol start="2">
+<li>
+<p>下載後解壓縮，並將資料夾放置於一個固定位置。</p>
+</li>
+<li>
+<p>回到VScode， 按<code>crtl+P</code>或<code>F1</code>打開命令行。輸入<code>&gt;settings (JSON)</code>。選擇「Open User Setting」。加入以下程式碼，將第一、二、五行的路徑分別改為sioyek與VScode的安裝路徑。</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;latex-workshop.view.pdf.external.viewer.command&#34;: &#34;D:/sioyek_release_windows/sioyek.exe&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.view.pdf.external.synctex.command&#34;: &#34;D:/sioyek_release_windows/sioyek.exe&#34;,
+</span></span><span class="line"><span class="cl">    &#34;latex-workshop.view.pdf.external.synctex.args&#34;: [
+</span></span><span class="line"><span class="cl">        &#34;--inverse-search&#34;,
+</span></span><span class="line"><span class="cl">        &#34;\&#34;D:/Microsoft VS Code/Code.exe\&#34; \&#34;D:/Microsoft VS Code/resources/app/out/cli.js\&#34; --ms-enable-electron-run-as-node -r -g \&#34;%1:%2\&#34;&#34;,
+</span></span><span class="line"><span class="cl">        &#34;--reuse-instance&#34;,
+</span></span><span class="line"><span class="cl">        &#34;--forward-search-file&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%TEX%&#34;,
+</span></span><span class="line"><span class="cl">        &#34;--forward-search-line&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%LINE%&#34;,
+</span></span><span class="line"><span class="cl">        &#34;%PDF%&#34;
+</span></span><span class="line"><span class="cl">],
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>至此，sioyek閱讀pdf的配置已完成。回到LaTeX 源碼，使用 <code>crtl+alt+J</code> 即可正向搜尋到pdf中的相對位置。</li>
+</ol>
+<h3 id="反向搜尋">反向搜尋</h3>
+<ol>
+<li>進入放置sioyek的資料夾中，打開「prefs.config」檔案。找到<code>inverse_search_command</code>，並修改為:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">inverse_search_command &#34;D:\Microsoft VS Code\Code.exe&#34; &#34;D:\Microsoft VS Code\resources\app\out\cli.js&#34; --ms-enable-electron-run-as-node -r -g &#34;%1:%2&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>使用<code>ctrl+alt+V</code>打開pdf文件後，按<code>F4</code>進入「synctex mode」。右鍵點擊，即可反向跳轉至LaTeX 源碼的相對位置。</li>
+</ol>
+<h2 id="追加介紹-latex-編譯的中間產物與注意事項">追加介紹: LaTeX 編譯的中間產物與注意事項</h2>
+<p>LaTeX 在編譯過程中會生成相當多的輔助文件和日誌(log)。如交互參照、參考文獻、目錄、索引等功能，需要先編譯生成輔助文件，再次編譯時讀入輔助文件得到正確的結果。因此，才需要定義編譯鏈，已得到較複雜的編譯結果。</p>
+<ul>
+<li>log:  排版引擎生成的日誌文件，供排查錯誤使用。</li>
+<li>aux: LaTeX 生成的主輔助文件，記錄交互參照、目錄、參考文獻的引用等。</li>
+<li>toc: LaTeX 生成的目錄記錄文件。</li>
+<li>lof: LaTeX 生成的圖片目錄記錄文件。</li>
+<li>lot: LaTeX 生成的表格目錄記錄文件。</li>
+<li>bbl: BibTeX 生成的參考文獻記錄文件。</li>
+<li>blg: BibTeX 生成的日誌文件。</li>
+<li>idx: LaTeX 生成的供 makeindex 處理的索引記錄文件。</li>
+<li>ind: makeindex 處理 .idx 生成的格式化索引記錄文件。</li>
+<li>ilg: makeindex 生成的日誌文件。</li>
+<li>out: hyperref 宏包生成的 PDF 書籤記錄文件。</li>
+</ul>
+<p><span class=red>大部分的中間產物可以透過先前的設定在編譯完成後自動刪除。但 <code>.log</code>、 <code>.aux</code>、 <code>.synctex.gz</code>建議留下，因為這些文件分別跟error code、交互參照、正反向搜索有關。刪除會導致正反向搜索功能失效或造成debug困難。</span></p>
+<h2 id="追加介紹-快捷鍵修改與自定義">追加介紹: 快捷鍵修改與自定義</h2>
+<ol>
+<li>按<code>crtl+P</code>或<code>F1</code>打開命令行。輸入<code>&gt;keyboard</code>，點選「Open Keyboard Shortcuts (JSON)」</li>
+</ol>
+<p><img src="https://i.imgur.com/GZYlv1s.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="link text"
+	
+	
+></p>
+<ol start="2">
+<li>可以根據下列範例自由定義快捷鍵。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    &#34;key&#34;: &#34;alt+b&#34;, //編譯
+</span></span><span class="line"><span class="cl">    &#34;command&#34;: &#34;latex-workshop.build&#34;,
+</span></span><span class="line"><span class="cl">    &#34;when&#34;: &#34;editorTextFocus &amp;&amp; !isMac&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    &#34;key&#34;: &#34;alt+t&#34;, //終止編譯
+</span></span><span class="line"><span class="cl">    &#34;command&#34;: &#34;latex-workshop.kill&#34;,
+</span></span><span class="line"><span class="cl">    &#34;when&#34;: &#34;editorTextFocus &amp;&amp; !isMac&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    &#34;key&#34;: &#34;alt+j&#34;, //正向搜索
+</span></span><span class="line"><span class="cl">    &#34;command&#34;: &#34;latex-workshop.synctex&#34;,
+</span></span><span class="line"><span class="cl">    &#34;when&#34;: &#34;editorTextFocus &amp;&amp; !isMac&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    &#34;key&#34;: &#34;alt+e&#34;, //選擇編譯方式
+</span></span><span class="line"><span class="cl">    &#34;command&#34;: &#34;latex-workshop.recipes&#34;
+</span></span><span class="line"><span class="cl">},
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/JSian.github.io/zh/tags/vscode/">VScode</a>
+        
+            <a href="/JSian.github.io/zh/tags/latex/">LaTeX</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/my-latex-user-guide/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/my-latex-user-guide/cover.e01d8a1e92bddb05aa826cc240f186e5_hu0685165e77bed5d76c546c4bb90bb557_1514980_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My LaTeX user guide"
+                        
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My LaTeX user guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Sian&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://jsian-chih.github.io/JSian.github.io/js/snow.js"></script>
+
+
+    </body>
+</html>

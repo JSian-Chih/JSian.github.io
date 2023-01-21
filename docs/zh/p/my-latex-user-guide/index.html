@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='My LaTeX user guide 我的操作環境是安裝texlive，並使用VSCode擴充LaTeX Workshop。 LaTeX LaTeX 是標記式語言(markup language)'>
+<title>My LaTeX user guide</title>
+
+<link rel='canonical' href='https://jsian-chih.github.io/JSian.github.io/zh/p/my-latex-user-guide/'>
+
+<link rel="stylesheet" href="/JSian.github.io/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='My LaTeX user guide'>
+<meta property='og:description' content='My LaTeX user guide 我的操作環境是安裝texlive，並使用VSCode擴充LaTeX Workshop。 LaTeX LaTeX 是標記式語言(markup language)'>
+<meta property='og:url' content='https://jsian-chih.github.io/JSian.github.io/zh/p/my-latex-user-guide/'>
+<meta property='og:site_name' content='Sian&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='LaTeX' /><meta property='article:published_time' content='2023-01-20T15:54:21&#43;08:00'/><meta property='article:modified_time' content='2023-01-20T15:54:21&#43;08:00'/><meta property='og:image' content='https://jsian-chih.github.io/JSian.github.io/zh/p/my-latex-user-guide/cover.jpg' />
+<meta name="twitter:title" content="My LaTeX user guide">
+<meta name="twitter:description" content="My LaTeX user guide 我的操作環境是安裝texlive，並使用VSCode擴充LaTeX Workshop。 LaTeX LaTeX 是標記式語言(markup language)"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jsian-chih.github.io/JSian.github.io/zh/p/my-latex-user-guide/cover.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+<script src="https://jsian-chih.github.io/JSian.github.io/js/snow.js"></script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/JSian.github.io/zh/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/JSian.github.io/img/AXReMHj_hufed4864fa0b2c0adfd2fe9e6c736dfe6_73944_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/JSian.github.io/zh">Sian&#39;s Blog</a></h1>
+            <h2 class="site-description">わが征くは星の大海</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/JSian-Chih'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/'
+                        target="_blank"
+                        title="Linkedin"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/en' >
+                
+                
+                
+                <span>English</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://jsian-chih.github.io/JSian.github.io/zh/" selected>中文</option>
+                        
+                            <option value="https://jsian-chih.github.io/JSian.github.io/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#latex">LaTeX</a></li>
+    <li><a href="#tex-文件---基本架構">.tex 文件 - 基本架構</a>
+      <ol>
+        <li><a href="#設定文件類型">設定文件類型</a></li>
+        <li><a href="#宣告區-span-classred中文輸入使用方法span">宣告區 (<span class="red">中文輸入使用方法</span>)</a></li>
+        <li><a href="#本文區-包括一些命令">本文區 (包括一些命令)</a></li>
+      </ol>
+    </li>
+    <li><a href="#beamer-如何利用latex製作簡報">Beamer: 如何利用LaTeX製作簡報</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/JSian.github.io/zh/p/my-latex-user-guide/">
+                <img src="/JSian.github.io/zh/p/my-latex-user-guide/cover_hu0685165e77bed5d76c546c4bb90bb557_1514980_800x0_resize_q75_box.jpg"
+                        srcset="/JSian.github.io/zh/p/my-latex-user-guide/cover_hu0685165e77bed5d76c546c4bb90bb557_1514980_800x0_resize_q75_box.jpg 800w, /JSian.github.io/zh/p/my-latex-user-guide/cover_hu0685165e77bed5d76c546c4bb90bb557_1514980_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post My LaTeX user guide" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/JSian.github.io/zh/categories/programming/" >
+                Programming
+            </a>
+        
+            <a href="/JSian.github.io/zh/categories/writing/" >
+                Writing
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/JSian.github.io/zh/p/my-latex-user-guide/">My LaTeX user guide</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 20, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <style>
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+</style>
+<h1 id="my-latex-user-guide">My LaTeX user guide</h1>
+<p>我的操作環境是安裝<a class="link" href="https://tug.org/texlive/acquire-netinstall.html"  target="_blank" rel="noopener"
+    >texlive</a>，並使用VSCode擴充<a class="link" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"  target="_blank" rel="noopener"
+    >LaTeX Workshop</a>。</p>
+<h2 id="latex">LaTeX</h2>
+<p>LaTeX 是<span class="red">標記式語言(markup language)</span>，運作方式與HTML類似，用標記來指定排版，文字大小、顏色等。</p>
+<p>以下是最簡單的LaTeX原始碼:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass{article}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%宣告區
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    %本文區
+</span></span><span class="line"><span class="cl">    My name is Sian!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="tex-文件---基本架構">.tex 文件 - 基本架構</h2>
+<h3 id="設定文件類型">設定文件類型</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[options]{class_name}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><span class="blue"><strong>{class_name}</strong></span> 為此篇文書的類型:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">class_name</th>
+<th style="text-align:left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">article</td>
+<td style="text-align:left">用來排版學術論文、學術報告等</td>
+</tr>
+<tr>
+<td style="text-align:center">report</td>
+<td style="text-align:left">格式有文章結構，用來排版回顧類、長篇論文、報告</td>
+</tr>
+<tr>
+<td style="text-align:center">book</td>
+<td style="text-align:left">排版出版書籍</td>
+</tr>
+<tr>
+<td style="text-align:center">proc</td>
+<td style="text-align:left">學術論文模板</td>
+</tr>
+<tr>
+<td style="text-align:center">slides</td>
+<td style="text-align:left">簡報格式的文檔</td>
+</tr>
+<tr>
+<td style="text-align:center">moderncv</td>
+<td style="text-align:left">用於個人簡歷</td>
+</tr>
+<tr>
+<td style="text-align:center">beamer</td>
+<td style="text-align:left">用於製作簡報</td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="blue"><strong>[options]</strong></span> 為可選用參數(可省略):</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">options</th>
+<th style="text-align:left">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">10pt</td>
+<td style="text-align:left">字體大小，不輸入時預設為10pt</td>
+</tr>
+<tr>
+<td style="text-align:center">a4paper</td>
+<td style="text-align:left">紙張大小，預設為letterpaper，可選擇: a4paper、a5paper、b5paper、executivepaper 和 legalpaper</td>
+</tr>
+<tr>
+<td style="text-align:center">titlepage</td>
+<td style="text-align:left">是否有標題頁，article預設為notitlepage，report和book預設為titlepage</td>
+</tr>
+<tr>
+<td style="text-align:center">landscape</td>
+<td style="text-align:left">令排版方向為橫向，不輸入時預設為縱向</td>
+</tr>
+<tr>
+<td style="text-align:center">onecolumn</td>
+<td style="text-align:left">令單雙欄排版，預設為onecolumn，可選擇: twocolumn</td>
+</tr>
+<tr>
+<td style="text-align:center">fleqn</td>
+<td style="text-align:left">令公式向左對齊，不輸入時預設置中</td>
+</tr>
+<tr>
+<td style="text-align:center">leqno</td>
+<td style="text-align:left">令公式編號在左，不輸入時預設在右</td>
+</tr>
+<tr>
+<td style="text-align:center">final</td>
+<td style="text-align:left">文稿模式，預設為final(終稿)，可選擇: draft(草稿)</td>
+</tr>
+<tr>
+<td style="text-align:center">oneside</td>
+<td style="text-align:left">單雙面，預設為單面(oneside)，可選擇: twoside</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h3 id="宣告區-span-classred中文輸入使用方法span">宣告區 (<span class="red">中文輸入使用方法</span>)</h3>
+<p>宣告區用於宣告使用的宏包(類似函式庫)、文章基本資訊與特殊功能(未來備註)。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">%宣告使用宏包
+</span></span><span class="line"><span class="cl">\usepackage{ctex}
+</span></span><span class="line"><span class="cl">\usepackage{package_name} 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%文章基本資訊
+</span></span><span class="line"><span class="cl">\title{ 標題名稱 }
+</span></span><span class="line"><span class="cl">\author{ 作者名稱 }
+</span></span><span class="line"><span class="cl">\date{ \today }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><span class="blue"><strong>xeCJK</strong> 為一支持中文編輯的宏包</span>，允許在文檔中使用中文，且支援許多中文字體(詳情看範例)。以下為使用字體範例:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    %中括號內打上使用字體(到電腦&#34;字型&#34;設定查詢)
+</span></span><span class="line"><span class="cl">    \newCJKfontfamily{\Kai}{標楷體}
+</span></span><span class="line"><span class="cl">    \setCJKmainfont{標楷體}
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><span class="red">使用<strong>xeCJK</strong>時:</span>
+使用XeLaTeX編譯，XeLaTeX是一種使用Unicode的LaTeX排版引擎，預設輸入文件以utf-8編碼。使用命令 <em>xelatex .tex</em> 編譯產生PDF文件。</p>
+</blockquote>
+<p><strong>文章基本資訊</strong>可以設定<span class="blue">文章標題(\title)</span>、<span class="blue">作者(\author)</span>與<span class="blue">日期(\date)</span>等。<span class="blue">\and</span> 用於連接每個作者，<span class="blue">\thanks</span>命令會產生一個對應的腳註，用以致謝或標註聯絡方式。在文本區使用 <strong>\maketitle</strong> 即可產生標題。見範例:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[UTF8]{article}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%宣告使用宏包
+</span></span><span class="line"><span class="cl">\usepackage{xeCJK}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%文章基本資訊
+</span></span><span class="line"><span class="cl">\title{ 成大校狗研究報告 }
+</span></span><span class="line"><span class="cl">\author{ 乖乖黃 \\ 國立成功大學, 雲平幫
+</span></span><span class="line"><span class="cl">\and 
+</span></span><span class="line"><span class="cl">白臉\thanks{E-mail} \\ 國立成功大學, 雲平幫 
+</span></span><span class="line"><span class="cl">\and 
+</span></span><span class="line"><span class="cl">呆呆 \\ 國立成功大學, 自強三傻
+</span></span><span class="line"><span class="cl">\and
+</span></span><span class="line"><span class="cl">麵線 \\ 國立成功大學, 自強三傻
+</span></span><span class="line"><span class="cl">\and
+</span></span><span class="line"><span class="cl">米香 \\ 國立成功大學, 自強三傻 }
+</span></span><span class="line"><span class="cl">\date{ \today }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    %本文區
+</span></span><span class="line"><span class="cl">    \maketitle
+</span></span><span class="line"><span class="cl">    My name is Sian!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>輸出結果:
+<img src="https://i.imgur.com/6IVie10.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>利用<span class="blue"><strong>authblk</strong>宏包</span>可以幫助標註多作者與研究單位，中括號 ([*]) 可幫作者與研究單位編號對應。在文本區使用 <strong>\maketitle</strong> 即可產生標題。見範例:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[UTF8]{article}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%宣告使用宏包
+</span></span><span class="line"><span class="cl">\usepackage{xeCJK}
+</span></span><span class="line"><span class="cl">\usepackage{authblk}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%文章基本資訊
+</span></span><span class="line"><span class="cl">\title{ 成大校狗研究報告 }
+</span></span><span class="line"><span class="cl">\author[1]{ 乖乖黃 }
+</span></span><span class="line"><span class="cl">\author[2]{ 白臉 }
+</span></span><span class="line"><span class="cl">\author[3]{ 呆呆 }
+</span></span><span class="line"><span class="cl">\author[4]{ 麵線 }
+</span></span><span class="line"><span class="cl">\author[5]{ 米香 }
+</span></span><span class="line"><span class="cl">\affil[1,2]{ 雲平幫 }
+</span></span><span class="line"><span class="cl">\affil[3,4,5]{ 自強三傻 }
+</span></span><span class="line"><span class="cl">\date{ \today }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    %本文區
+</span></span><span class="line"><span class="cl">    \maketitle
+</span></span><span class="line"><span class="cl">    My name is Sian!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>輸出結果:
+<img src="https://i.imgur.com/yjQyssY.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<blockquote>
+<p>其實<strong>文章基本資訊</strong>也可以打在本文區。</p>
+</blockquote>
+<h3 id="本文區-包括一些命令">本文區 (包括一些命令)</h3>
+<p>待續&hellip;</p>
+<h2 id="beamer-如何利用latex製作簡報">Beamer: 如何利用LaTeX製作簡報</h2>
+<p>參考&quot;自用Beamer Theme&quot;。(待補)</p>
+<h1 id="數學公式參考">數學公式參考</h1>
+<p><img src="https://i.imgur.com/us6PNv0.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="https://i.imgur.com/DDqcsDH.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="https://i.imgur.com/nd2Qzuh.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="https://i.imgur.com/uc0hpvK.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/JSian.github.io/zh/tags/latex/">LaTeX</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/vscode_latex_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/vscode_latex_tutorial/cover.42efcbce9a099b9cc2841f2d6448d476_hu18be54e43eafcc95dcec893c1e1a7622_3588945_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境"
+                        data-key="VScode_Latex_tutorial" 
+                        data-hash="md5-Qu/LzpoJm5zChB8tZEjUdg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">搭建 VScode 的LaTeX 編寫環境</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Sian&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://jsian-chih.github.io/JSian.github.io/js/snow.js"></script>
+
+
+    </body>
+</html>
