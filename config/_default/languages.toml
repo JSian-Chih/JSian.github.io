@@ -1,9 +1,0 @@
-# Uncomment this file to enable multilanguage site support
-
-[en]
-    languageName = 'English'
-    languageCode = "en-us"
-
-[zh]
-    languageName = '中文'
-    languageCode = "zh-tw"
