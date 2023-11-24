@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Sian&#39;s Blog</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/page/</link>
+        <description>Recent content in Pages on Sian&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>文章列表</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/archives/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>連結</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/%E9%80%A3%E7%B5%90/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/%E9%80%A3%E7%B5%90/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

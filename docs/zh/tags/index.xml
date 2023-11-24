@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on Sian&#39;s Blog</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/</link>
+        <description>Recent content in Tags on Sian&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Fri, 20 Jan 2023 15:54:21 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>LaTeX</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/latex/</link>
+        <pubDate>Fri, 20 Jan 2023 15:54:21 +0800</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/tags/latex/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>VScode</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/vscode/</link>
+        <pubDate>Fri, 20 Jan 2023 15:46:22 +0800</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/tags/vscode/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>C&#43;&#43;</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/c&#43;&#43;/</link>
+        <pubDate>Fri, 20 Jan 2023 15:03:43 +0800</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/tags/c&#43;&#43;/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
