@@ -127,15 +127,6 @@
                 href="https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_c_tutorial/"
                 />
   </url><url>
-    <loc>https://jsian-chih.github.io/JSian.github.io/zh/categories/example-category/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jsian-chih.github.io/JSian.github.io/zh/tags/example-tag/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jsian-chih.github.io/JSian.github.io/zh/p/hello-world/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://jsian-chih.github.io/JSian.github.io/zh/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -161,6 +152,8 @@
                 hreflang="zh-tw"
                 href="https://jsian-chih.github.io/JSian.github.io/zh/archives/"
                 />
+  </url><url>
+    <loc>https://jsian-chih.github.io/JSian.github.io/zh/categories/example-category/</loc>
   </url><url>
     <loc>https://jsian-chih.github.io/JSian.github.io/zh/%E9%80%A3%E7%B5%90/</loc>
     <xhtml:link
