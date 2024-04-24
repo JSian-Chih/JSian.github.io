@@ -6,7 +6,522 @@
         <description>Recent content in Writing on Sian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Wed, 27 Mar 2024 15:54:21 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/categories/writing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 13:28:33 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/categories/writing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>My Zotero user guide</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/zotero_tutorial/</link>
+        <pubDate>Wed, 24 Apr 2024 13:28:33 +0800</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/zotero_tutorial/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/zotero_tutorial/cover.jpg" alt="Featured image of post My Zotero user guide" /&gt;&lt;style&gt;
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;my-zotero-user-guide&#34;&gt;My Zotero user guide&lt;/h1&gt;
+&lt;h2 id=&#34;setup-zotero&#34;&gt;Setup Zotero&lt;/h2&gt;
+&lt;h3 id=&#34;install-zotero-6-for-windows&#34;&gt;Install Zotero 6 for Windows&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;安裝 &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zotero&lt;/a&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgur.com/CgA0t9s.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Imgur&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/csu3Ia7.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;選擇 &amp;ldquo;Custom&amp;rdquo; ，按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/GSn1XRk.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;imag&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;設定安裝路徑後，按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/pxcDL9q.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Vy3IEHv.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Install&amp;rdquo; 並等待安裝完成。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/AwUB2jc.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;apply-the-account-of-zotero&#34;&gt;Apply the account of zotero&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;進到 &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/user/register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zotero 註冊畫面&lt;/a&gt; 申請帳號。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;zotero-literature-database&#34;&gt;Zotero literature database&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;啟動 Zotero，點選 &amp;ldquo;Edit&amp;rdquo; -&amp;gt; &amp;ldquo;Preference&amp;rdquo;。到 Zotero Preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/QJ6DMAK.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;選擇 &amp;ldquo;Sync&amp;rdquo;，並登入。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/F9d8b1K.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;此處可以選擇資料的同步模式。一種是 &amp;ldquo;Zotero&amp;rdquo;，利用Zotero 官方提供的雲端空間同步；另一種是使用 &amp;ldquo;WebDAV&amp;rdquo;，請參考後面的教學。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8U8wK6k.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;按下右上角的整理符號即可同步資料。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/yGvf8Et.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;import-the-literature-data-and-document&#34;&gt;Import the literature data and document&lt;/h3&gt;
+&lt;p&gt;關於如何將網路上的資源加入Zotero 的 library。除了直接將pdf文件拖曳進入 Zotero外，Zotero 提供了相關的瀏覽器插件，可以直接從線上文獻資料庫匯入Zotero。詳情請參考: &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/adding_items_to_zotero&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Adding Items to Zotero&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;add-on-zotfile-advanced-pdf-management-for-zotero&#34;&gt;Add-on: ZotFile, Advanced PDF management for Zotero&lt;/h3&gt;
+&lt;p&gt;這裡將介紹Zotero 的開源插件「ZotFile」。ZotFile 可以幫助我們完成自定義的項目重命名，文件與行動裝置的同步編輯等問題。推薦安裝。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;進入 &lt;a class=&#34;link&#34; href=&#34;http://zotfile.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ZotFile&lt;/a&gt;網站點選下載。將會下載到一個 Zotfile 的插件檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回到Zotero 中，點選&amp;quot;Tools&amp;quot; -&amp;gt; &amp;ldquo;Add-ons&amp;rdquo;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Jw2fdCZ.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;將先前下載到的插件檔案拖曳進來，按下&amp;quot;install now&amp;quot;，並重新開啟Zotero。就安裝完成了!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/VAtVokj.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;ZotFile提供了許多設置選項。選擇 &amp;ldquo;Tools&amp;rdquo; -&amp;gt; &amp;ldquo;ZotFile preferences&amp;rdquo; 。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/OsOSFeO.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;其中比較廣泛會用到的功能就是自動命名。可以參考:&lt;a class=&#34;link&#34; href=&#34;http://zotfile.com/index.html#renaming-rules&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Renaming Rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/xK0vygY.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;zotero--infinicloud-tutorial&#34;&gt;Zotero + Infinicloud Tutorial&lt;/h2&gt;
+&lt;h3 id=&#34;why-infinicloud&#34;&gt;Why Infinicloud?&lt;/h3&gt;
+&lt;p&gt;這個部分將介紹如何完成Zotero跨平台與裝置的同步。如先前提到的，我們可以利用Zotero的雲端空間進行資料處存與同步。但免費版本空間有限，要做到大量資料與pdf檔案的同步就需要用到另一種方式:「WebDAV」。Infinicloud (其前身為 Teracloud) 是一個由日本公司提供的雲端服務，且支援WebDAV。&lt;/p&gt;
+&lt;h3 id=&#34;apply-the-account-of-infinicloud&#34;&gt;Apply the account of Infinicloud&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;進入 &lt;a class=&#34;link&#34; href=&#34;https://infini-cloud.net/en/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Infinicloud 官網&lt;/a&gt;，首先申請一個 Infinicloud 帳號。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1.jpg&#34;
+	width=&#34;1018&#34;
+	height=&#34;411&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hud9b63331bffd45259ecb7f7497abb8ff_165330_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hud9b63331bffd45259ecb7f7497abb8ff_165330_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;247&#34;
+		data-flex-basis=&#34;594px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;輸入資料與email，接收驗證碼並驗證。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2.jpg&#34;
+	width=&#34;717&#34;
+	height=&#34;844&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_huf998283e50ae0963dcde20b7fef64df9_125026_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_huf998283e50ae0963dcde20b7fef64df9_125026_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;apps-connection-webdav&#34;&gt;Apps Connection (WebDAV)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;登入 Infinicloud 帳號後，進入 「My Page」。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3.jpg&#34;
+	width=&#34;1856&#34;
+	height=&#34;678&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu81fbf12c0ccf02a89747f67e2b429f24_288880_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu81fbf12c0ccf02a89747f67e2b429f24_288880_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;到 Apps Connection，勾選「Turn on Apps Connection」。並將 WebDAV Connection URL 和 Apps Password 記下。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4.jpg&#34;
+	width=&#34;1005&#34;
+	height=&#34;275&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hua1d2483fabfe30ecaca1f3baf019cbb5_77013_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hua1d2483fabfe30ecaca1f3baf019cbb5_77013_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;365&#34;
+		data-flex-basis=&#34;877px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;Apps Password 只會出現一次&lt;/span&gt;，每次按下「Reissue」都會更新密碼。已登入WebDAV 的「所有系統」都要重新輸入 Password。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;connect-to-zotero&#34;&gt;Connect to Zotero&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;回到 Zotero，點選 Edit -&amp;gt; Preferences。到 Zotero Preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5.jpg&#34;
+	width=&#34;272&#34;
+	height=&#34;258&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu16f91f7f4caf0428443f54ed17158846_39721_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu16f91f7f4caf0428443f54ed17158846_39721_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;105&#34;
+		data-flex-basis=&#34;253px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;點選 Sync，勾選 File Syncing ，選擇「WebDAV」。並在此輸入在 Infinicloud 中得到的 WebDAV Connection URL、帳號和 Apps Password。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6.jpg&#34;
+	width=&#34;611&#34;
+	height=&#34;722&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu753f0d47637a1f7ef70cf46a552f0cbd_165127_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu753f0d47637a1f7ef70cf46a552f0cbd_165127_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;按下 「Verify Server」確認連線成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7.jpg&#34;
+	width=&#34;354&#34;
+	height=&#34;142&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu971969e21a118516650d0edb75662c8d_18521_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu971969e21a118516650d0edb75662c8d_18521_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;249&#34;
+		data-flex-basis=&#34;598px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;至此，Zotero 儲存的文件已可自動同步至 Infinicloud 中。無論在手機、平板或另一台電腦上，只要在 Zotero 設定同樣的 WebDAV Connection URL、帳號和 Apps Password，資料即可同步。&lt;/p&gt;
+&lt;h2 id=&#34;using-zotero-with-latex&#34;&gt;Using Zotero with LaTeX&lt;/h2&gt;
+&lt;p&gt;在 Zotero 中，我們可以收集並閱讀各種文獻。在撰寫論文時我們必須在文章中引用文獻，而 LaTeX 必須產生 BibTex 文件。此段落介紹如何利用 Zotero 產生 BibTex 文件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;選定要輸出的文獻後右鍵，並點選「Export items」。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1.jpg&#34;
+	width=&#34;1314&#34;
+	height=&#34;633&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hufe3d50184001ce59389827f4253e01c5_361252_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hufe3d50184001ce59389827f4253e01c5_361252_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;選定特定文獻後右鍵&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;498px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2.jpg&#34;
+	width=&#34;1310&#34;
+	height=&#34;607&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_huf191ecea14d63d518d28c4037b1ff616_355343_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_huf191ecea14d63d518d28c4037b1ff616_355343_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;直接在 Collection 右鍵&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;選定 Format 為「BibTex」。並點選 OK。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3.jpg&#34;
+	width=&#34;279&#34;
+	height=&#34;331&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu0c46cf2f62964a37104b20fbe001ccca_50700_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu0c46cf2f62964a37104b20fbe001ccca_50700_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;202px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Zotero 會自動根據文獻的作者、題目、內容與類型輸出相應的 BibTex 檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4.jpg&#34;
+	width=&#34;218&#34;
+	height=&#34;35&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu54a5814f2b5669daedd7d1073c7bca16_5570_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu54a5814f2b5669daedd7d1073c7bca16_5570_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BibTex 檔案&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;622&#34;
+		data-flex-basis=&#34;1494px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5.jpg&#34;
+	width=&#34;943&#34;
+	height=&#34;418&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu99848beba55f1442e464cc33fe698d29_246941_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu99848beba55f1442e464cc33fe698d29_246941_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BibTex 檔案內容&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;225&#34;
+		data-flex-basis=&#34;541px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;add-on-better-bibtex-easier-to-manage-bibliographic-data&#34;&gt;Add-on: better Bibtex, Easier to manage bibliographic data&lt;/h3&gt;
+&lt;p&gt;「better Bibtex」為一個幫助我們更好的管理並輸出 BibTex 檔案的插件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;到 &lt;a class=&#34;link&#34; href=&#34;https://github.com/retorquere/zotero-better-bibtex/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;「better Bibtex」的 GitHub&lt;/a&gt; 下載檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1.jpg&#34;
+	width=&#34;1147&#34;
+	height=&#34;362&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu3f977d4ea6a95bd96bd24068c8d4e7a6_91566_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu3f977d4ea6a95bd96bd24068c8d4e7a6_91566_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;316&#34;
+		data-flex-basis=&#34;760px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;如同文章上述提到的方式，將下載的插件檔案匯入 Zotero 並重啟 Zotero。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2.jpg&#34;
+	width=&#34;875&#34;
+	height=&#34;320&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu717057c114693fcd8be88bde7517a2da_110674_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu717057c114693fcd8be88bde7517a2da_110674_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;better-bibtex-setup&#34;&gt;better BibTex Setup&lt;/h3&gt;
+&lt;p&gt;配合「better BibTex」，此處介紹一些方便的設定。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟 Tools -&amp;gt; Better BibTex -&amp;gt; Open Better BibTex preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3.jpg&#34;
+	width=&#34;652&#34;
+	height=&#34;277&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu34267aa32d0ef2f1c0bd4883b0bd24da_125009_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu34267aa32d0ef2f1c0bd4883b0bd24da_125009_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;235&#34;
+		data-flex-basis=&#34;564px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;「Citation Key」的部分可以設定 LaTeX 中使用的「Citation Key」格式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4.jpg&#34;
+	width=&#34;758&#34;
+	height=&#34;599&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hudf00fcfdf07dad98e54674c444b5a8bf_151879_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hudf00fcfdf07dad98e54674c444b5a8bf_151879_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;「Export」 -&amp;gt; Fields 中，在 Fields to omit from export 中輸入&lt;code&gt;note,file,abstract&lt;/code&gt;。此設定使得在輸出 BibTex 格式時，忽略筆記、檔案與摘要資訊。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5.jpg&#34;
+	width=&#34;756&#34;
+	height=&#34;604&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu87ab78cfd3491aa740e5ff219bf57889_90394_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu87ab78cfd3491aa740e5ff219bf57889_90394_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;300px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;到 Zotero Preferences 中的 Export。「Item Format」部分可以設定「Quick Copy」的格式。此處設定好後，點選相應的文件並使用預設快捷鍵&lt;code&gt;Ctrl+Shift+C&lt;/code&gt;可以快速複製 BibTex 格式在剪貼簿(Clipboard)上，並直接在使用&lt;code&gt;Ctrl+V&lt;/code&gt; 貼到其他文字檔案或 BibTex 檔案上。(也可以直接左鍵拖曳)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6.jpg&#34;
+	width=&#34;667&#34;
+	height=&#34;747&#34;
+	srcset=&#34;https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu0458e8520b4cb6deffcc8f0f6f2bc3ed_182221_480x0_resize_q75_box.jpg 480w, https://jsian-chih.github.io/JSian.github.io/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu0458e8520b4cb6deffcc8f0f6f2bc3ed_182221_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;214px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-zotero-with-word&#34;&gt;Using Zotero with Word&lt;/h2&gt;
+&lt;p&gt;目前本人的工作流程是配合 LaTeX 與 Zotero。至於配合 Word 的方法要安裝相對應的 Plugin。此處 Zotero 的官網已提供相當完整的教學。在此附上連結:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/word_processor_plugin_manual_installation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zotero.org/support/word_processor_plugin_manual_installation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/word_processor_plugin_usage&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zotero.org/support/word_processor_plugin_usage&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;之後有遇到較複雜的問題再作補充說明。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Paper: Active Learning Literature Survey</title>
         <link>https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/</link>
         <pubDate>Wed, 27 Mar 2024 15:54:21 +0800</pubDate>
