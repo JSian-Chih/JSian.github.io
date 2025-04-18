@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Machine Learning on Sian&#39;s Blog</title>
-        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/machine-learning/</link>
+        <link>https://jsian-chih.github.io/zh/tags/machine-learning/</link>
         <description>Recent content in Machine Learning on Sian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Wed, 27 Mar 2024 15:54:21 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 27 Mar 2024 15:54:21 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/zh/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Paper: Active Learning Literature Survey</title>
-        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/</link>
+        <link>https://jsian-chih.github.io/zh/p/paper-active-learning-literature-survey/</link>
         <pubDate>Wed, 27 Mar 2024 15:54:21 +0800</pubDate>
         
-        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/</guid>
-        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg" alt="Featured image of post Paper: Active Learning Literature Survey" /&gt;&lt;style&gt;
+        <guid>https://jsian-chih.github.io/zh/p/paper-active-learning-literature-survey/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg" alt="Featured image of post Paper: Active Learning Literature Survey" /&gt;&lt;style&gt;
 .red {
   color: red;
 }

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Matlab on Sian&#39;s Blog</title>
-        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/matlab/</link>
+        <link>https://jsian-chih.github.io/zh/tags/matlab/</link>
         <description>Recent content in Matlab on Sian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Wed, 24 Apr 2024 13:28:33 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/tags/matlab/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Apr 2024 13:28:33 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/zh/tags/matlab/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>My Matlab LMI Toolbox user guide</title>
-        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/lmi_matlab_tutorial/</link>
+        <link>https://jsian-chih.github.io/zh/p/lmi_matlab_tutorial/</link>
         <pubDate>Wed, 24 Apr 2024 13:28:33 +0800</pubDate>
         
-        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/lmi_matlab_tutorial/</guid>
-        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/lmi_matlab_tutorial/cover.jpg" alt="Featured image of post My Matlab LMI Toolbox user guide" /&gt;&lt;style&gt;
+        <guid>https://jsian-chih.github.io/zh/p/lmi_matlab_tutorial/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/zh/p/lmi_matlab_tutorial/cover.jpg" alt="Featured image of post My Matlab LMI Toolbox user guide" /&gt;&lt;style&gt;
 .red {
   color: red;
 }
