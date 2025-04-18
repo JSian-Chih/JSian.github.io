@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>VScode on Sian&#39;s Blog</title>
-        <link>http://localhost:1313/JSian.github.io/zh/tags/vscode/</link>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/tags/vscode/</link>
         <description>Recent content in VScode on Sian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Fri, 20 Jan 2023 15:46:22 +0800</lastBuildDate><atom:link href="http://localhost:1313/JSian.github.io/zh/tags/vscode/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Jan 2023 15:46:22 +0800</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/tags/vscode/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>搭建 VScode 的LaTeX 編寫環境</title>
-        <link>http://localhost:1313/JSian.github.io/zh/p/vscode_latex_tutorial/</link>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/</link>
         <pubDate>Fri, 20 Jan 2023 15:46:22 +0800</pubDate>
         
-        <guid>http://localhost:1313/JSian.github.io/zh/p/vscode_latex_tutorial/</guid>
-        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/vscode_latex_tutorial/cover.jpg" alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境" /&gt;&lt;style&gt;
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_latex_tutorial/cover.jpg" alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境" /&gt;&lt;style&gt;
 .red {
   color: red;
 }
@@ -103,7 +103,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;VScode 的安裝可參考: &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/JSian.github.io/zh/p/vscode_c_tutorial/&#34; &gt;C++ programming with Visual Studio Code (Using gcc/g++ with MinGW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VScode 的安裝可參考: &lt;a class=&#34;link&#34; href=&#34;https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_c_tutorial/&#34; &gt;C++ programming with Visual Studio Code (Using gcc/g++ with MinGW)&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;在-vscode-上配置環境&#34;&gt;在 VScode 上配置環境
 &lt;/h2&gt;&lt;ol&gt;
@@ -416,7 +416,7 @@
 &lt;p&gt;Remark: 有無最後的逗點取決於:此json檔在這段程式碼後，是否結束。如果接續其他設定，則要加逗號。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;完成&#34;&gt;完成!
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;到此為止基礎的環境配置已經完成。完成程式碼後，使用&lt;code&gt;crtl+alt+B&lt;/code&gt;利用默認的方式編譯。或根據下圖指示編譯方式。使用&lt;code&gt;crtl+alt+V&lt;/code&gt;可以快速打開pdf進行預覽。參考: &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/JSian.github.io/fkOFnbjRRiuxtLj29koTgw&#34; &gt;My LaTeX user guide&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;到此為止基礎的環境配置已經完成。完成程式碼後，使用&lt;code&gt;crtl+alt+B&lt;/code&gt;利用默認的方式編譯。或根據下圖指示編譯方式。使用&lt;code&gt;crtl+alt+V&lt;/code&gt;可以快速打開pdf進行預覽。參考: &lt;a class=&#34;link&#34; href=&#34;https://jsian-chih.github.io/JSian.github.io/fkOFnbjRRiuxtLj29koTgw&#34; &gt;My LaTeX user guide&lt;/a&gt;。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/zb28joA.jpg&#34;
 	
@@ -719,11 +719,11 @@
         </item>
         <item>
         <title>C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)</title>
-        <link>http://localhost:1313/JSian.github.io/zh/p/vscode_c_tutorial/</link>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_c_tutorial/</link>
         <pubDate>Fri, 20 Jan 2023 15:03:43 +0800</pubDate>
         
-        <guid>http://localhost:1313/JSian.github.io/zh/p/vscode_c_tutorial/</guid>
-        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/vscode_c_tutorial/cover.jpg" alt="Featured image of post C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)" /&gt;&lt;style&gt;
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_c_tutorial/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/vscode_c_tutorial/cover.jpg" alt="Featured image of post C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)" /&gt;&lt;style&gt;
 .red {
   color: red;
 }

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
-    <head><script src="/JSian.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=JSian.github.io/livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="\r論文: Active Learning Literature Survey\r此文章為大學時期修課時寫的，更新上來之後再整理。\nAbstract\r主動式學習(Active Learning)的核心思想是利用較少的已標註數據，得到同樣優良的準確率。在大部分機器學習(Machine Learning)問題中，未標註的數據量遠比已標註的數據多，且易於取得。但是要給予所有未標註的數據人工的標註又太耗費人力成本。所以主動式學習變成解決這跟問題的一道良方。此文章對於主動式學習的介紹非常詳細，包括舉例可能遇到的事件或問題(Scenarios)、查詢策略框架(Query Strategy Frameworks)、主動式學習在實務經驗與理論上的分析(Analysis of Active Learning)、設置變量的問題(Problem Setting Variants)和相關的研究領域(Related Research Area)。\n">
 <title>Paper: Active Learning Literature Survey</title>
 
-<link rel='canonical' href='http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/'>
+<link rel='canonical' href='https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/'>
 
 <link rel="stylesheet" href="/JSian.github.io/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="Paper: Active Learning Literature Survey">
 <meta property='og:description' content="\r論文: Active Learning Literature Survey\r此文章為大學時期修課時寫的，更新上來之後再整理。\nAbstract\r主動式學習(Active Learning)的核心思想是利用較少的已標註數據，得到同樣優良的準確率。在大部分機器學習(Machine Learning)問題中，未標註的數據量遠比已標註的數據多，且易於取得。但是要給予所有未標註的數據人工的標註又太耗費人力成本。所以主動式學習變成解決這跟問題的一道良方。此文章對於主動式學習的介紹非常詳細，包括舉例可能遇到的事件或問題(Scenarios)、查詢策略框架(Query Strategy Frameworks)、主動式學習在實務經驗與理論上的分析(Analysis of Active Learning)、設置變量的問題(Problem Setting Variants)和相關的研究領域(Related Research Area)。\n">
-<meta property='og:url' content='http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/'>
+<meta property='og:url' content='https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/'>
 <meta property='og:site_name' content='Sian&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2024-03-27T15:54:21&#43;08:00'/><meta property='article:modified_time' content='2024-03-27T15:54:21&#43;08:00'/><meta property='og:image' content='http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Machine Learning' /><meta property='article:published_time' content='2024-03-27T15:54:21&#43;08:00'/><meta property='article:modified_time' content='2024-03-27T15:54:21&#43;08:00'/><meta property='og:image' content='https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg' />
 <meta name="twitter:title" content="Paper: Active Learning Literature Survey">
 <meta name="twitter:description" content="\r論文: Active Learning Literature Survey\r此文章為大學時期修課時寫的，更新上來之後再整理。\nAbstract\r主動式學習(Active Learning)的核心思想是利用較少的已標註數據，得到同樣優良的準確率。在大部分機器學習(Machine Learning)問題中，未標註的數據量遠比已標註的數據多，且易於取得。但是要給予所有未標註的數據人工的標註又太耗費人力成本。所以主動式學習變成解決這跟問題的一道良方。此文章對於主動式學習的介紹非常詳細，包括舉例可能遇到的事件或問題(Scenarios)、查詢策略框架(Query Strategy Frameworks)、主動式學習在實務經驗與理論上的分析(Analysis of Active Learning)、設置變量的問題(Problem Setting Variants)和相關的研究領域(Related Research Area)。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg' />
+    <meta name="twitter:image" content='https://jsian-chih.github.io/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg' />
     <link rel="shortcut icon" href="/JSian.github.io/favicon.ico" />
 
     </head>
@@ -224,9 +224,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="http://localhost:1313/JSian.github.io/zh/" selected>中文</option>
+                                    <option value="https://jsian-chih.github.io/JSian.github.io/zh/" selected>中文</option>
                                 
-                                    <option value="http://localhost:1313/JSian.github.io/en/" >English</option>
+                                    <option value="https://jsian-chih.github.io/JSian.github.io/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -726,7 +726,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/JSian.github.io/ts/main.0d757de0886b07b57782e26f6d93118b0657e9c727f0639ed824b5ce9981b457.js" defer></script>
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
