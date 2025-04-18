@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><script src="/JSian.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=JSian.github.io/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" My Matlab LMI Toolbox user guide\rLMI Introduction\r利用線性矩陣不等式(Linear Matrix Inequalities, LMI)，我們可以求解許多控制上的問題。此處以本人的碩士論文有用到的 LMI 問題為例。考慮以下 LMI 問題:\n">
+<title>My Matlab LMI Toolbox user guide</title>
+
+<link rel='canonical' href='http://localhost:1313/JSian.github.io/zh/p/lmi_matlab_tutorial/'>
+
+<link rel="stylesheet" href="/JSian.github.io/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="My Matlab LMI Toolbox user guide">
+<meta property='og:description' content=" My Matlab LMI Toolbox user guide\rLMI Introduction\r利用線性矩陣不等式(Linear Matrix Inequalities, LMI)，我們可以求解許多控制上的問題。此處以本人的碩士論文有用到的 LMI 問題為例。考慮以下 LMI 問題:\n">
+<meta property='og:url' content='http://localhost:1313/JSian.github.io/zh/p/lmi_matlab_tutorial/'>
+<meta property='og:site_name' content='Sian&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='matlab' /><meta property='article:tag' content='LMI' /><meta property='article:published_time' content='2024-04-24T13:28:33&#43;08:00'/><meta property='article:modified_time' content='2024-04-24T13:28:33&#43;08:00'/><meta property='og:image' content='http://localhost:1313/JSian.github.io/zh/p/lmi_matlab_tutorial/cover.jpg' />
+<meta name="twitter:title" content="My Matlab LMI Toolbox user guide">
+<meta name="twitter:description" content=" My Matlab LMI Toolbox user guide\rLMI Introduction\r利用線性矩陣不等式(Linear Matrix Inequalities, LMI)，我們可以求解許多控制上的問題。此處以本人的碩士論文有用到的 LMI 問題為例。考慮以下 LMI 問題:\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/JSian.github.io/zh/p/lmi_matlab_tutorial/cover.jpg' />
+    <link rel="shortcut icon" href="/JSian.github.io/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/JSian.github.io/zh/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/JSian.github.io/img/AXReMHj_hu_be8d0aca21806444.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/JSian.github.io/zh">Sian&#39;s Blog</a></h1>
+            <h2 class="site-description">わが征くは星の大海</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/JSian-Chih'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/'
+                        target="_blank"
+                        title="Linkedin"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/en' >
+                
+                
+                
+                <span>English Articles</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/JSian.github.io/zh/" selected>中文</option>
+                                
+                                    <option value="http://localhost:1313/JSian.github.io/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#lmi-introduction">LMI Introduction</a></li>
+    <li><a href="#matlab-code-application">Matlab Code Application</a>
+      <ol>
+        <li><a href="#定義已知參數">定義已知參數</a></li>
+        <li><a href="#定義待解矩陣的變數結構與維度">定義待解矩陣的變數結構與維度</a>
+          <ol>
+            <li><a href="#setlmis">setlmis</a></li>
+            <li><a href="#lmivar">lmivar</a></li>
+          </ol>
+        </li>
+        <li><a href="#描述每個-lmi-的結構與內容">描述每個 LMI 的結構與內容</a>
+          <ol>
+            <li><a href="#lmiterm">lmiterm</a></li>
+            <li><a href="#getlmis">getlmis</a></li>
+          </ol>
+        </li>
+        <li><a href="#求解lmi問題">求解LMI問題</a>
+          <ol>
+            <li><a href="#feasp">feasp</a></li>
+            <li><a href="#dec2mat">dec2mat</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#discussion">Discussion</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/JSian.github.io/zh/p/lmi_matlab_tutorial/">
+                <img src="/JSian.github.io/zh/p/lmi_matlab_tutorial/cover_hu_52c2fd20cea33c03.jpg"
+                        srcset="/JSian.github.io/zh/p/lmi_matlab_tutorial/cover_hu_52c2fd20cea33c03.jpg 800w, /JSian.github.io/zh/p/lmi_matlab_tutorial/cover_hu_47e00f0ff61c69d7.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post My Matlab LMI Toolbox user guide" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/JSian.github.io/zh/categories/programming/" >
+                Programming
+            </a>
+        
+            <a href="/JSian.github.io/zh/categories/control/" >
+                Control
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/JSian.github.io/zh/p/lmi_matlab_tutorial/">My Matlab LMI Toolbox user guide</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">4月 24, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <style>
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+</style>
+<h1 id="my-matlab-lmi-toolbox-user-guide">My Matlab LMI Toolbox user guide
+</h1><h2 id="lmi-introduction">LMI Introduction
+</h2><p>利用線性矩陣不等式(Linear Matrix Inequalities, LMI)，我們可以求解許多控制上的問題。此處以本人的碩士論文有用到的 LMI 問題為例。考慮以下 LMI 問題:</p>
+<p>[
+\begin{bmatrix}
+\mathbf{A}_0^T \mathbf{P} + \mathbf{P} \mathbf{A}_0 + \varepsilon \mathbf{F}^T \mathbf{F} + \mathbf{Q} &amp; \mathbf{P} \mathbf{E} \
+\mathbf{E}^T \mathbf{P} &amp; - \varepsilon \bm{\mu}^{-1}
+\end{bmatrix}
+&lt; 0
+]</p>
+<p>[
+\mathbf{P} = \mathbf{P}^T &gt; 0, \quad \mathbf{P} = \mathbf{P}^T &gt; 0 \quad, \varepsilon &gt; 0
+]</p>
+<p>在 Matlab 中建立 LMI 系统模型，可以被拆解成四個部分:</p>
+<ol>
+<li>定義已知參數。(如: $\mathbf{A}_0$、$\mathbf{E}$、$\mathbf{F}$、$\bm{\mu}$)</li>
+<li>定義待解矩陣的變數結構與維度。(如: $\mathbf{P}$、$\mathbf{Q}$、$\varepsilon$)</li>
+<li>描述每個 LMI 的結構與內容。</li>
+<li>求解LMI問題。</li>
+</ol>
+<p>在 Matlab 中主要有兩種使用 LMI toolbox 的方法，「使用命令行(.m)」與「使用 GUI 介面 (lmiedit)」。
+以下內容將會使用命令行，並依據四個部分作範例 code 解說。並介紹其中會用到的 Matlab Function。</p>
+<h2 id="matlab-code-application">Matlab Code Application
+</h2><h3 id="定義已知參數">定義已知參數
+</h3><p>此部分根據系統已知或假設的參數設定 $\mathbf{A}_0$、$\mathbf{E}$、$\mathbf{F}$、$\bm{\mu}$。</p>
+<p><strong>範例 Code</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Matlab" data-lang="Matlab"><span class="line"><span class="cl"><span class="n">A0</span> <span class="p">=</span> <span class="p">[</span><span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">eye</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="o">-</span><span class="n">Ki</span> <span class="o">-</span><span class="n">Kp</span> <span class="o">-</span><span class="n">Kd</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">E</span> <span class="p">=</span> <span class="p">[</span><span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="n">Ki</span> <span class="n">Kp</span> <span class="n">Kd</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% uncertanty parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">alpha_bar</span> <span class="p">=</span> <span class="p">[</span><span class="n">inv</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">J0</span><span class="p">)</span><span class="o">*</span><span class="mf">0.2</span><span class="o">*</span><span class="n">J0</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="mf">1.2</span><span class="o">*</span><span class="n">J0</span><span class="p">)</span><span class="o">*</span><span class="n">J0</span><span class="o">*</span><span class="n">T</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">beta_bar</span> <span class="p">=</span> <span class="p">[</span><span class="n">inv</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="n">J0</span><span class="p">)</span><span class="o">*</span><span class="mf">0.2</span><span class="o">*</span><span class="n">J0</span><span class="o">*</span><span class="n">inv</span><span class="p">(</span><span class="mf">1.2</span><span class="o">*</span><span class="n">J0</span><span class="p">)</span><span class="o">*</span><span class="n">J0</span><span class="o">*</span><span class="n">T</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">nabla</span> <span class="p">=</span> <span class="p">[</span><span class="n">alpha_bar</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="n">beta_bar</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="n">alpha_bar</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">F</span> <span class="p">=</span> <span class="p">[</span><span class="nb">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">);</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="nb">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">% uncertainty boundary</span>
+</span></span><span class="line"><span class="cl"><span class="n">mu</span> <span class="p">=</span> <span class="n">nabla</span><span class="o">*</span><span class="n">nabla</span><span class="o">&#39;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="定義待解矩陣的變數結構與維度">定義待解矩陣的變數結構與維度
+</h3><p>此處定義 $\mathbf{P}$、$\mathbf{Q}$、$\varepsilon$。先簡單介紹此處會用到的命令:</p>
+<ul>
+<li><code>setlmis</code>: 初始化 LMI toolbox 系統，開始進行 LMI 設定。</li>
+<li><code>lmivar</code>: 定義 LMI 待求解矩陣。</li>
+</ul>
+<h4 id="setlmis">setlmis
+</h4><p>LMI 問題在 Matlab 中描述必須以 <code>setlmis</code> 開始，以 <code>getlmis</code> 結束。</p>
+<ul>
+<li><code>setlmis ([])</code>： 重置並直接創立一個 LMI 問題。</li>
+<li><code>setlmis (LMISys)</code>: 定義變數 <code>LMISys</code> 為一個 LMI 問題。</li>
+</ul>
+<h4 id="lmivar">lmivar
+</h4><p>使用命令 <code>lmivar</code> 一次定義一個待解變數，並描述其維度與結構。</p>
+<ul>
+<li><code>X = lmivar(type,structure)</code> : 另一個待解變數 <code>X</code>。</li>
+<li><code>[X,n,sX] = lmivar(type,structure)</code>: 另一個待解變數 <code>X</code>，且輸出:
+<ul>
+<li><code>n</code>:Number of decision variables</li>
+<li><code>sX</code>:Dependence of X on decision variables</li>
+</ul>
+</li>
+</ul>
+<p>其中 <code>type</code> 與 <code>structure</code>:</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">type</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left"><code>X</code> 是一個對稱對角矩陣 (Symmetric matrix with a block diagonal structure)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left"><code>X</code> 是一個滿秩長方陣 (Full rectangular matrix)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>X</code> 為其他形式 (Other structure)</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>當 type = 1:</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Structure</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>structure(1)</code></td>
+          <td style="text-align: left">方形矩陣維度</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>structure(2)</code></td>
+          <td style="text-align: left">矩陣形式，1: full block ，0: scalar block (a scalar multiple of the identity matrix)，-1: zero block</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>當 type = 2: 直接定義長矩陣維度($m \times n$) <code> structure = [m,n]</code></li>
+<li>當 type = 3: 自訂矩陣形式，參考 <a class="link" href="https://www.mathworks.com/help/robust/ug/advanced-topics.html"  target="_blank" rel="noopener"
+    >Advanced LMI Techniques</a>。</li>
+</ul>
+<p><strong>範例 Code</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Matlab" data-lang="Matlab"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">setlmis</span><span class="p">([]);</span> <span class="c">% initialization</span>
+</span></span><span class="line"><span class="cl"><span class="n">P</span> <span class="p">=</span> <span class="n">lmivar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="nb">size</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">]);</span> <span class="c">% Specify the structure and size of P</span>
+</span></span><span class="line"><span class="cl"><span class="n">Q</span> <span class="p">=</span> <span class="n">lmivar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="nb">size</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">]);</span> <span class="c">% Specify the structure and size of Q</span>
+</span></span><span class="line"><span class="cl"><span class="n">epsilon</span> <span class="p">=</span> <span class="n">lmivar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">1</span><span class="p">]);</span>  <span class="c">% Specify the structure and size of epsilon</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="描述每個-lmi-的結構與內容">描述每個 LMI 的結構與內容
+</h3><p>此處定義 LMI 問題中的每個不等式。先簡單介紹此處會用到的命令:</p>
+<ul>
+<li><code>lmiterm</code>: 添加不等式與設定其結構。</li>
+<li><code>getlmis</code>: 獲得定義 LMI 問題的長陣列。</li>
+</ul>
+<h4 id="lmiterm">lmiterm
+</h4><ul>
+<li><code>lmiterm(termID,A,B,flag)</code>: 在當前LMI問題中，添加一項(term)到某個不等式中。</li>
+</ul>
+<p>termID: 一個四維向量。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">termID</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>termID(1)</code></td>
+          <td style="text-align: left"><code>+p</code> 表達在第p個不等式左邊加上，<code>-p</code> 表達在第p個不等式右邊加上</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>termID(2:3)</code></td>
+          <td style="text-align: left">表達矩陣不等式中的位置</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>termID(4)</code></td>
+          <td style="text-align: left">表達此項(term)的類型，<code>0</code>:常數項，<code>X</code>:變量$AXB$，<code>-X</code>:變量$AX^TB$</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>A和B分別是常識或變量的左右係數。</p>
+<p>當 flag = &rsquo;s&rsquo;時，指定加入項(term)為 $AXB + (AXB)^T$。</p>
+<blockquote>
+<p>預設 LMI 不等式都是求解負定($&lt;0$)。為了求解正定($&gt;0$)不等式，加入項(term)時，將<code>termID(1)</code> 直接設定為<code>-p</code>，將其加在不等式右邊。</p></blockquote>
+<h4 id="getlmis">getlmis
+</h4><p>當 LMI 問題定義完成後，輸入命令: <code>lmis = getlmis</code>。輸出變數 <code>lmis</code> 將會是一個包含LMI問題的長陣列。</p>
+<p><strong>範例 Code</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Matlab" data-lang="Matlab"><span class="line"><span class="cl"><span class="c">% Define LMI</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">P</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="n">A0</span><span class="p">,</span> <span class="s">&#39;s&#39;</span><span class="p">);</span> <span class="c">% P*A + A&#39;*P</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">Q</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c">% Q</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">epsilon</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="n">F</span><span class="o">&#39;*</span><span class="n">F</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">2</span> <span class="n">P</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="n">E</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">2</span> <span class="n">epsilon</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">inv</span><span class="p">(</span><span class="n">mu</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">P</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c">% -ID : &gt;0</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="o">-</span><span class="mi">3</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">Q</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">lmiterm</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span> <span class="mi">1</span> <span class="mi">1</span> <span class="n">epsilon</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">lmis</span> <span class="p">=</span> <span class="n">getlmis</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="求解lmi問題">求解LMI問題
+</h3><p>此處對 LMI 問題 <code>lmis</code>求解 。 先簡單介紹此處會用到的命令:</p>
+<ul>
+<li><code>feasp</code>: 對給定之 LMI 問題求解。</li>
+<li><code>dec2mat</code>: 獲得 LMI 求解結果。將求出的向量，根據對稱性轉換為普通的矩陣。</li>
+</ul>
+<h4 id="feasp">feasp
+</h4><ul>
+<li><code>[tmin,xfeas] = feasp(lmis)</code>:  對給定之 LMI 問題求解。
+<ul>
+<li><code>tmin</code>: 代表最佳化問題是否收斂。 如果 <code>tmin &lt; 0</code>，則該問題有可行解。如果 <code>tmin &gt; 0</code>，則該問題無可行解。</li>
+<li><code>xfeas</code>: 用於獲得可行解的變數。</li>
+</ul>
+</li>
+</ul>
+<h4 id="dec2mat">dec2mat
+</h4><ul>
+<li><code>valX = dec2mat(lmis,xfeas,X)</code>: 獲得 LMI 求解結果。變將 <code>X</code> 的可行解賦值到 <code>valX</code>。
+<ul>
+<li><code>lmis</code>: 包含LMI問題的長陣列。</li>
+<li><code>xfeas</code>: 可行解的變數。</li>
+<li><code>X</code>: 要提取之待求解變數。</li>
+</ul>
+</li>
+</ul>
+<p><strong>範例 Code</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Matlab" data-lang="Matlab"><span class="line"><span class="cl"><span class="p">[</span><span class="n">t_min</span><span class="p">,</span> <span class="n">LMI_Sol</span><span class="p">]</span> <span class="p">=</span> <span class="n">feasp</span><span class="p">(</span><span class="n">lmis</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">P_Ans</span> <span class="p">=</span> <span class="n">dec2mat</span><span class="p">(</span><span class="n">lmis</span><span class="p">,</span> <span class="n">LMI_Sol</span><span class="p">,</span> <span class="n">P</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Q_Ans</span> <span class="p">=</span> <span class="n">dec2mat</span><span class="p">(</span><span class="n">lmis</span><span class="p">,</span> <span class="n">LMI_Sol</span><span class="p">,</span> <span class="n">Q</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">epsilon_Ans</span> <span class="p">=</span> <span class="n">dec2mat</span><span class="p">(</span><span class="n">lmis</span><span class="p">,</span> <span class="n">LMI_Sol</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="discussion">Discussion
+</h2><p>至此，我們完整的介紹如何根據範例 LMI 問題，利用 Matlab 命令求解。LMI toolbox 為一個方便求解 LMI 問題的工具。需要注意的是: <span class="red"> LMI toolbox 找不到可行解的 LMI 問題不代表可行解不存在，且其找到之可行解不保證為最優解 </span>。就如同所有最佳化問題與最佳化演算法一樣，LMI 問題的求解過程也是一種最佳化求解，不能保證其找到全域最佳解。</p>
+<h2 id="reference">Reference
+</h2><p>[1] Guang-Ren Duan、Hai-Hua Yu, &ldquo;LMIs in Control Systems Analysis Design and Applications&rdquo;</p>
+<p>[2] P. Gahinet, A. Nemirovski, A. J. Laub, and M. Chilali, &ldquo;LMI Control Toolbox,&rdquo; p. 356.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/JSian.github.io/zh/tags/matlab/">Matlab</a>
+        
+            <a href="/JSian.github.io/zh/tags/lmi/">LMI</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title"></h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/zotero_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/zotero_tutorial/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My Zotero user guide"
+                        data-key="Zotero_tutorial" 
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My Zotero user guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/paper-active-learning-literature-survey/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Paper: Active Learning Literature Survey"
+                        
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Paper: Active Learning Literature Survey</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/my-latex-user-guide/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/my-latex-user-guide/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My LaTeX user guide"
+                        
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My LaTeX user guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/vscode_latex_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/vscode_latex_tutorial/cover.42efcbce9a099b9cc2841f2d6448d476_hu_b491280ff2eb9cb8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境"
+                        data-key="VScode_Latex_tutorial" 
+                        data-hash="md5-Qu/LzpoJm5zChB8tZEjUdg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">搭建 VScode 的LaTeX 編寫環境</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/vscode_c_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/vscode_c_tutorial/cover.fcba1f48c089b9105cff16fde7d27334_hu_4d817a0978804a48.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)"
+                        data-key="VScode_C_tutorial" 
+                        data-hash="md5-/LofSMCJuRBc/xb959JzNA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Sian&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.0d757de0886b07b57782e26f6d93118b0657e9c727f0639ed824b5ce9981b457.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

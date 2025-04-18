@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>AI on Sian&#39;s Blog</title>
+        <link>http://localhost:1313/JSian.github.io/zh/tags/ai/</link>
+        <description>Recent content in AI on Sian&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 27 Mar 2024 15:54:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/JSian.github.io/zh/tags/ai/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Paper: Active Learning Literature Survey</title>
+        <link>http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/</link>
+        <pubDate>Wed, 27 Mar 2024 15:54:21 +0800</pubDate>
+        
+        <guid>http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/</guid>
+        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg" alt="Featured image of post Paper: Active Learning Literature Survey" /&gt;&lt;style&gt;
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;論文-active-learning-literature-survey&#34;&gt;論文: Active Learning Literature Survey
+&lt;/h1&gt;&lt;p&gt;此文章為大學時期修課時寫的，更新上來之後再整理。&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract
+&lt;/h2&gt;&lt;p&gt;主動式學習(Active Learning)的核心思想是利用較少的已標註數據，得到同樣優良的準確率。在大部分機器學習(Machine Learning)問題中，未標註的數據量遠比已標註的數據多，且易於取得。但是要給予所有未標註的數據人工的標註又太耗費人力成本。所以主動式學習變成解決這跟問題的一道良方。此文章對於主動式學習的介紹非常詳細，包括舉例可能遇到的事件或問題(Scenarios)、查詢策略框架(Query Strategy Frameworks)、主動式學習在實務經驗與理論上的分析(Analysis of Active Learning)、設置變量的問題(Problem Setting Variants)和相關的研究領域(Related Research Area)。&lt;/p&gt;
+&lt;h2 id=&#34;論文方法&#34;&gt;論文方法
+&lt;/h2&gt;&lt;p&gt;文章一開始先介紹了何謂主動式學習(又稱Query Learning或Optimal Experimental Design)，並且對當時(2009)現有的主動式學習的應用提出舉例，如:Speech recognition、Information extraction和Classification and filtering。接著文章提及pool-based active learning cycle做例子，比較使用已標註和未標註的數據進行訓練得到的結果，與主動式學習和被動式學習(passive learning)再分別棒球與曲棍球的表現。發現使用挑選過的未標註數據進行主動式學習，有時候反而能讓模型得到較高的準確率。&lt;/p&gt;
+&lt;h3 id=&#34;scenarios&#34;&gt;Scenarios
+&lt;/h3&gt;&lt;p&gt;作者列出了三種情況: (i) membership query synthesis、(ii) stream-based selective sampling和(iii) pool-based active learning。作者舉例許多文獻表示，由模型申請標註數據的Query Synthesis在特定領域更高效率的解決問題，例如學習預測機械手臂的絕對座標。此方法較適合讓模型依據經驗標註數據，如果給予數據是由人工標註，反而可能降低準確率。Stream-based Selective Sampling則是讓模型在大量的未標註數據中選擇數據標註，如果樣本數據屬於uniform distribution，則效果可能跟Query Synthesis一樣好。但模型選擇由人工標註樣本的判斷條件依據不同的任務而有不同，且須查詢大量數據，查詢成本很高。相較於Stream-based Selective Sampling，Pool-based Active Learning可以直接遠出樣本池中貢獻度最高的樣本數據，降低查詢成本與標註成本，使得此類方法備覺廣泛使用。&lt;/p&gt;
+&lt;h3 id=&#34;query-strategy-frameworks&#34;&gt;Query Strategy Frameworks
+&lt;/h3&gt;&lt;p&gt;文章中概述幾種對於數據選擇與處理的方式。Uncertainty Sampling，模型應該要積極的找尋較難以被標註的未標註數據，此方法通常適用於概率學習型模型。作者也有舉例用於非概率學習型模型的例子。Query-By-Committee(QBC)該方法設定了一個集合，集合的元素用於儲存不同的模型的數據，每一個模型分別查詢未標註的數據，選擇並儲存。最後依據集合的參數，被選擇最多次的數據就是被選擇要回傳受編著的數據。Expected Model Change，此方法是在被標註的數據中選擇最能改變模型效果的目標。Discriminative Probabilistic Models判斷將能改變最大訓練梯度得樣本作為該被選擇加入的樣本。但實際上樣本是為被標註的，所以還須事先計算在各種不同標註下的期望損失(loss)。Variance Reduction and Fisher Information Ratio，此方法適用於分析並減少模型未來的誤差。可以知道模型對於數據的不確定性和模型參數間的關係。Estimated Error Reduction，是想查詢最小化未來誤差的數據，而這可能是五種策略中成本最高的。Density-Weighted Methods，作者在最後提到Uncertainty Sampling和Query-By-Committee(QBC)容易查詢到異常直，因此才提出Fisher Information Ratio和Estimated Error Reduction，而使用不同的權重控制整個演算法模型。&lt;/p&gt;
+&lt;h3 id=&#34;analysis-of-active-learning&#34;&gt;Analysis of active learning
+&lt;/h3&gt;&lt;p&gt;作者利用經驗與理論兩種層面分析主動式學習，就經驗上來說主動式學習是有效的，但如果模型改變，訓練用數據可能無法再達到一樣的效果。而理論的分析可以讓我們知道如何更有效的使用主動式學習。不過大部的主動式學習還是用在非常複雜或極端的演算法上，有待之後的研究補強。&lt;/p&gt;
+&lt;h3 id=&#34;problem-setting-variants&#34;&gt;Problem Setting Variants
+&lt;/h3&gt;&lt;p&gt;接著，作者補出了幾個擴展傳統主動式學習的方法已應付更複雜的問題。Active Learning for Structured Output，提到利用序列與樹(sequence and trees)的概念改進演算法。Batch-Mode Active Learning，藉由改變模型訓練的速度去適應不同的方法與結構。Active Learning with Costs，討論成本(cost)的變化在不同的情況下如何影響模型。&lt;/p&gt;
+&lt;h3 id=&#34;related-research-areas&#34;&gt;Related Research Areas
+&lt;/h3&gt;&lt;p&gt;文章最後作者舉例跟主動式學習相關的領域研究。包括:Semi-Supervised Learning、Reinforcement Learing、Equivalence Query Learning、Active Class Selection、Active Feature Acquisition and Classification和Modal Parroting and Compression。&lt;/p&gt;
+&lt;h2 id=&#34;結果與討論&#34;&gt;結果與討論
+&lt;/h2&gt;&lt;p&gt;這篇文章寫於2009年，作者以當時現有的研究與文獻對於主動式學習做了一個通盤的整理與歸納，使得像是我們這般初學者可以更快的對於這個領域有概括性的了解。作者亦對於不同的領域提出想法與總結，讓我們更快切入重點。其中出現了許多不同的概念，我在上網查找資料時學到很多，更發現網路上關於主動式學習的文章大多引用了這篇文獻。文章中的列舉和說明，與最後的參考文獻，也指引了往不同方向研究的標竿。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

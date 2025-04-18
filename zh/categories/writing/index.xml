@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Writing on Sian&#39;s Blog</title>
+        <link>http://localhost:1313/JSian.github.io/zh/categories/writing/</link>
+        <description>Recent content in Writing on Sian&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 24 Apr 2024 13:28:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/JSian.github.io/zh/categories/writing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>My Zotero user guide</title>
+        <link>http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/</link>
+        <pubDate>Wed, 24 Apr 2024 13:28:33 +0800</pubDate>
+        
+        <guid>http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/</guid>
+        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/cover.jpg" alt="Featured image of post My Zotero user guide" /&gt;&lt;style&gt;
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;my-zotero-user-guide&#34;&gt;My Zotero user guide
+&lt;/h1&gt;&lt;h2 id=&#34;setup-zotero&#34;&gt;Setup Zotero
+&lt;/h2&gt;&lt;h3 id=&#34;install-zotero-6-for-windows&#34;&gt;Install Zotero 6 for Windows
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安裝 &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zotero&lt;/a&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgur.com/CgA0t9s.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Imgur&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/csu3Ia7.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;選擇 &amp;ldquo;Custom&amp;rdquo; ，按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/GSn1XRk.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;imag&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;設定安裝路徑後，按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/pxcDL9q.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Next&amp;rdquo;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Vy3IEHv.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;按 &amp;ldquo;Install&amp;rdquo; 並等待安裝完成。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/AwUB2jc.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;apply-the-account-of-zotero&#34;&gt;Apply the account of zotero
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;進到 &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/user/register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zotero 註冊畫面&lt;/a&gt; 申請帳號。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;zotero-literature-database&#34;&gt;Zotero literature database
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;啟動 Zotero，點選 &amp;ldquo;Edit&amp;rdquo; -&amp;gt; &amp;ldquo;Preference&amp;rdquo;。到 Zotero Preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/QJ6DMAK.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;選擇 &amp;ldquo;Sync&amp;rdquo;，並登入。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/F9d8b1K.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;此處可以選擇資料的同步模式。一種是 &amp;ldquo;Zotero&amp;rdquo;，利用Zotero 官方提供的雲端空間同步；另一種是使用 &amp;ldquo;WebDAV&amp;rdquo;，請參考後面的教學。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8U8wK6k.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;按下右上角的整理符號即可同步資料。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/yGvf8Et.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;import-the-literature-data-and-document&#34;&gt;Import the literature data and document
+&lt;/h3&gt;&lt;p&gt;關於如何將網路上的資源加入Zotero 的 library。除了直接將pdf文件拖曳進入 Zotero外，Zotero 提供了相關的瀏覽器插件，可以直接從線上文獻資料庫匯入Zotero。詳情請參考: &lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/adding_items_to_zotero&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Adding Items to Zotero&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;add-on-zotfile-advanced-pdf-management-for-zotero&#34;&gt;Add-on: ZotFile, Advanced PDF management for Zotero
+&lt;/h3&gt;&lt;p&gt;這裡將介紹Zotero 的開源插件「ZotFile」。ZotFile 可以幫助我們完成自定義的項目重命名，文件與行動裝置的同步編輯等問題。推薦安裝。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;進入 &lt;a class=&#34;link&#34; href=&#34;http://zotfile.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ZotFile&lt;/a&gt;網站點選下載。將會下載到一個 Zotfile 的插件檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回到Zotero 中，點選&amp;quot;Tools&amp;quot; -&amp;gt; &amp;ldquo;Add-ons&amp;rdquo;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Jw2fdCZ.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;將先前下載到的插件檔案拖曳進來，按下&amp;quot;install now&amp;quot;，並重新開啟Zotero。就安裝完成了!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/VAtVokj.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;ZotFile提供了許多設置選項。選擇 &amp;ldquo;Tools&amp;rdquo; -&amp;gt; &amp;ldquo;ZotFile preferences&amp;rdquo; 。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/OsOSFeO.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;其中比較廣泛會用到的功能就是自動命名。可以參考:&lt;a class=&#34;link&#34; href=&#34;http://zotfile.com/index.html#renaming-rules&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Renaming Rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/xK0vygY.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;zotero--infinicloud-tutorial&#34;&gt;Zotero + Infinicloud Tutorial
+&lt;/h2&gt;&lt;h3 id=&#34;why-infinicloud&#34;&gt;Why Infinicloud?
+&lt;/h3&gt;&lt;p&gt;這個部分將介紹如何完成Zotero跨平台與裝置的同步。如先前提到的，我們可以利用Zotero的雲端空間進行資料處存與同步。但免費版本空間有限，要做到大量資料與pdf檔案的同步就需要用到另一種方式:「WebDAV」。Infinicloud (其前身為 Teracloud) 是一個由日本公司提供的雲端服務，且支援WebDAV。&lt;/p&gt;
+&lt;h3 id=&#34;apply-the-account-of-infinicloud&#34;&gt;Apply the account of Infinicloud
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;進入 &lt;a class=&#34;link&#34; href=&#34;https://infini-cloud.net/en/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Infinicloud 官網&lt;/a&gt;，首先申請一個 Infinicloud 帳號。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1.jpg&#34;
+	width=&#34;1018&#34;
+	height=&#34;411&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hu_e75af8c5000409af.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hu_101756c3105624c4.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;247&#34;
+		data-flex-basis=&#34;594px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;輸入資料與email，接收驗證碼並驗證。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2.jpg&#34;
+	width=&#34;717&#34;
+	height=&#34;844&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_hu_3eb580841e55ed8d.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_hu_f93294e44d1c223a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;apps-connection-webdav&#34;&gt;Apps Connection (WebDAV)
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;登入 Infinicloud 帳號後，進入 「My Page」。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3.jpg&#34;
+	width=&#34;1856&#34;
+	height=&#34;678&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu_cf4e9434ec304691.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu_7ad7e16ee00e3e06.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;到 Apps Connection，勾選「Turn on Apps Connection」。並將 WebDAV Connection URL 和 Apps Password 記下。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4.jpg&#34;
+	width=&#34;1005&#34;
+	height=&#34;275&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hu_29c7cc5a3ba9eb5a.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hu_3fb016bb9b00d53b.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;365&#34;
+		data-flex-basis=&#34;877px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;Apps Password 只會出現一次&lt;/span&gt;，每次按下「Reissue」都會更新密碼。已登入WebDAV 的「所有系統」都要重新輸入 Password。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;connect-to-zotero&#34;&gt;Connect to Zotero
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;回到 Zotero，點選 Edit -&amp;gt; Preferences。到 Zotero Preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5.jpg&#34;
+	width=&#34;272&#34;
+	height=&#34;258&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu_da65646c2c5d2df3.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu_8724f2073e145562.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;105&#34;
+		data-flex-basis=&#34;253px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;點選 Sync，勾選 File Syncing ，選擇「WebDAV」。並在此輸入在 Infinicloud 中得到的 WebDAV Connection URL、帳號和 Apps Password。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6.jpg&#34;
+	width=&#34;611&#34;
+	height=&#34;722&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu_8a2721a54b990701.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu_2453522288faa227.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;按下 「Verify Server」確認連線成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7.jpg&#34;
+	width=&#34;354&#34;
+	height=&#34;142&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu_4570b0552a15d099.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu_1836ff7000716bef.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;249&#34;
+		data-flex-basis=&#34;598px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;至此，Zotero 儲存的文件已可自動同步至 Infinicloud 中。無論在手機、平板或另一台電腦上，只要在 Zotero 設定同樣的 WebDAV Connection URL、帳號和 Apps Password，資料即可同步。&lt;/p&gt;
+&lt;h2 id=&#34;using-zotero-with-latex&#34;&gt;Using Zotero with LaTeX
+&lt;/h2&gt;&lt;p&gt;在 Zotero 中，我們可以收集並閱讀各種文獻。在撰寫論文時我們必須在文章中引用文獻，而 LaTeX 必須產生 BibTex 文件。此段落介紹如何利用 Zotero 產生 BibTex 文件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;選定要輸出的文獻後右鍵，並點選「Export items」。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1.jpg&#34;
+	width=&#34;1314&#34;
+	height=&#34;633&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hu_3ade00d8f44c6b40.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hu_e4a2dd9805ac1a5.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;選定特定文獻後右鍵&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;498px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2.jpg&#34;
+	width=&#34;1310&#34;
+	height=&#34;607&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_hu_a19fb5cb94e2da12.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_hu_4ceafae2349b83f7.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;直接在 Collection 右鍵&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;選定 Format 為「BibTex」。並點選 OK。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3.jpg&#34;
+	width=&#34;279&#34;
+	height=&#34;331&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu_45c6657f208f0898.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu_a998bf3bdedd1446.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;202px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Zotero 會自動根據文獻的作者、題目、內容與類型輸出相應的 BibTex 檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4.jpg&#34;
+	width=&#34;218&#34;
+	height=&#34;35&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu_a1b67f5665ae6f2d.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu_caff5c845ed907e2.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BibTex 檔案&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;622&#34;
+		data-flex-basis=&#34;1494px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5.jpg&#34;
+	width=&#34;943&#34;
+	height=&#34;418&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu_286ee3674d36fecc.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu_de29178d1b6d85f.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BibTex 檔案內容&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;225&#34;
+		data-flex-basis=&#34;541px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;add-on-better-bibtex-easier-to-manage-bibliographic-data&#34;&gt;Add-on: better Bibtex, Easier to manage bibliographic data
+&lt;/h3&gt;&lt;p&gt;「better Bibtex」為一個幫助我們更好的管理並輸出 BibTex 檔案的插件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;到 &lt;a class=&#34;link&#34; href=&#34;https://github.com/retorquere/zotero-better-bibtex/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;「better Bibtex」的 GitHub&lt;/a&gt; 下載檔案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1.jpg&#34;
+	width=&#34;1147&#34;
+	height=&#34;362&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu_2dda20ac50f93d29.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu_fabee567a0fe57b3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;316&#34;
+		data-flex-basis=&#34;760px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;如同文章上述提到的方式，將下載的插件檔案匯入 Zotero 並重啟 Zotero。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2.jpg&#34;
+	width=&#34;875&#34;
+	height=&#34;320&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu_95f1ba63318e5f4b.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu_7e6cc4ad204b0280.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;better-bibtex-setup&#34;&gt;better BibTex Setup
+&lt;/h3&gt;&lt;p&gt;配合「better BibTex」，此處介紹一些方便的設定。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟 Tools -&amp;gt; Better BibTex -&amp;gt; Open Better BibTex preferences。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3.jpg&#34;
+	width=&#34;652&#34;
+	height=&#34;277&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu_392004c169531504.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu_51b5fa6ade704dc2.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;235&#34;
+		data-flex-basis=&#34;564px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;「Citation Key」的部分可以設定 LaTeX 中使用的「Citation Key」格式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4.jpg&#34;
+	width=&#34;758&#34;
+	height=&#34;599&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hu_18f4e1da5e9ab571.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hu_88c50cdbb8164535.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;「Export」 -&amp;gt; Fields 中，在 Fields to omit from export 中輸入&lt;code&gt;note,file,abstract&lt;/code&gt;。此設定使得在輸出 BibTex 格式時，忽略筆記、檔案與摘要資訊。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5.jpg&#34;
+	width=&#34;756&#34;
+	height=&#34;604&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu_a73efeca2069b094.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu_1c240dd0ef56de44.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;300px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;到 Zotero Preferences 中的 Export。「Item Format」部分可以設定「Quick Copy」的格式。此處設定好後，點選相應的文件並使用預設快捷鍵&lt;code&gt;Ctrl+Shift+C&lt;/code&gt;可以快速複製 BibTex 格式在剪貼簿(Clipboard)上，並直接在使用&lt;code&gt;Ctrl+V&lt;/code&gt; 貼到其他文字檔案或 BibTex 檔案上。(也可以直接左鍵拖曳)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6.jpg&#34;
+	width=&#34;667&#34;
+	height=&#34;747&#34;
+	srcset=&#34;http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu_974c775692d7cb72.jpg 480w, http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu_33a394abedcbcf6a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;214px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-zotero-with-word&#34;&gt;Using Zotero with Word
+&lt;/h2&gt;&lt;p&gt;目前本人的工作流程是配合 LaTeX 與 Zotero。至於配合 Word 的方法要安裝相對應的 Plugin。此處 Zotero 的官網已提供相當完整的教學。在此附上連結:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/word_processor_plugin_manual_installation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zotero.org/support/word_processor_plugin_manual_installation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/support/word_processor_plugin_usage&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zotero.org/support/word_processor_plugin_usage&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;之後有遇到較複雜的問題再作補充說明。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Paper: Active Learning Literature Survey</title>
+        <link>http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/</link>
+        <pubDate>Wed, 27 Mar 2024 15:54:21 +0800</pubDate>
+        
+        <guid>http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/</guid>
+        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.jpg" alt="Featured image of post Paper: Active Learning Literature Survey" /&gt;&lt;style&gt;
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;論文-active-learning-literature-survey&#34;&gt;論文: Active Learning Literature Survey
+&lt;/h1&gt;&lt;p&gt;此文章為大學時期修課時寫的，更新上來之後再整理。&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract
+&lt;/h2&gt;&lt;p&gt;主動式學習(Active Learning)的核心思想是利用較少的已標註數據，得到同樣優良的準確率。在大部分機器學習(Machine Learning)問題中，未標註的數據量遠比已標註的數據多，且易於取得。但是要給予所有未標註的數據人工的標註又太耗費人力成本。所以主動式學習變成解決這跟問題的一道良方。此文章對於主動式學習的介紹非常詳細，包括舉例可能遇到的事件或問題(Scenarios)、查詢策略框架(Query Strategy Frameworks)、主動式學習在實務經驗與理論上的分析(Analysis of Active Learning)、設置變量的問題(Problem Setting Variants)和相關的研究領域(Related Research Area)。&lt;/p&gt;
+&lt;h2 id=&#34;論文方法&#34;&gt;論文方法
+&lt;/h2&gt;&lt;p&gt;文章一開始先介紹了何謂主動式學習(又稱Query Learning或Optimal Experimental Design)，並且對當時(2009)現有的主動式學習的應用提出舉例，如:Speech recognition、Information extraction和Classification and filtering。接著文章提及pool-based active learning cycle做例子，比較使用已標註和未標註的數據進行訓練得到的結果，與主動式學習和被動式學習(passive learning)再分別棒球與曲棍球的表現。發現使用挑選過的未標註數據進行主動式學習，有時候反而能讓模型得到較高的準確率。&lt;/p&gt;
+&lt;h3 id=&#34;scenarios&#34;&gt;Scenarios
+&lt;/h3&gt;&lt;p&gt;作者列出了三種情況: (i) membership query synthesis、(ii) stream-based selective sampling和(iii) pool-based active learning。作者舉例許多文獻表示，由模型申請標註數據的Query Synthesis在特定領域更高效率的解決問題，例如學習預測機械手臂的絕對座標。此方法較適合讓模型依據經驗標註數據，如果給予數據是由人工標註，反而可能降低準確率。Stream-based Selective Sampling則是讓模型在大量的未標註數據中選擇數據標註，如果樣本數據屬於uniform distribution，則效果可能跟Query Synthesis一樣好。但模型選擇由人工標註樣本的判斷條件依據不同的任務而有不同，且須查詢大量數據，查詢成本很高。相較於Stream-based Selective Sampling，Pool-based Active Learning可以直接遠出樣本池中貢獻度最高的樣本數據，降低查詢成本與標註成本，使得此類方法備覺廣泛使用。&lt;/p&gt;
+&lt;h3 id=&#34;query-strategy-frameworks&#34;&gt;Query Strategy Frameworks
+&lt;/h3&gt;&lt;p&gt;文章中概述幾種對於數據選擇與處理的方式。Uncertainty Sampling，模型應該要積極的找尋較難以被標註的未標註數據，此方法通常適用於概率學習型模型。作者也有舉例用於非概率學習型模型的例子。Query-By-Committee(QBC)該方法設定了一個集合，集合的元素用於儲存不同的模型的數據，每一個模型分別查詢未標註的數據，選擇並儲存。最後依據集合的參數，被選擇最多次的數據就是被選擇要回傳受編著的數據。Expected Model Change，此方法是在被標註的數據中選擇最能改變模型效果的目標。Discriminative Probabilistic Models判斷將能改變最大訓練梯度得樣本作為該被選擇加入的樣本。但實際上樣本是為被標註的，所以還須事先計算在各種不同標註下的期望損失(loss)。Variance Reduction and Fisher Information Ratio，此方法適用於分析並減少模型未來的誤差。可以知道模型對於數據的不確定性和模型參數間的關係。Estimated Error Reduction，是想查詢最小化未來誤差的數據，而這可能是五種策略中成本最高的。Density-Weighted Methods，作者在最後提到Uncertainty Sampling和Query-By-Committee(QBC)容易查詢到異常直，因此才提出Fisher Information Ratio和Estimated Error Reduction，而使用不同的權重控制整個演算法模型。&lt;/p&gt;
+&lt;h3 id=&#34;analysis-of-active-learning&#34;&gt;Analysis of active learning
+&lt;/h3&gt;&lt;p&gt;作者利用經驗與理論兩種層面分析主動式學習，就經驗上來說主動式學習是有效的，但如果模型改變，訓練用數據可能無法再達到一樣的效果。而理論的分析可以讓我們知道如何更有效的使用主動式學習。不過大部的主動式學習還是用在非常複雜或極端的演算法上，有待之後的研究補強。&lt;/p&gt;
+&lt;h3 id=&#34;problem-setting-variants&#34;&gt;Problem Setting Variants
+&lt;/h3&gt;&lt;p&gt;接著，作者補出了幾個擴展傳統主動式學習的方法已應付更複雜的問題。Active Learning for Structured Output，提到利用序列與樹(sequence and trees)的概念改進演算法。Batch-Mode Active Learning，藉由改變模型訓練的速度去適應不同的方法與結構。Active Learning with Costs，討論成本(cost)的變化在不同的情況下如何影響模型。&lt;/p&gt;
+&lt;h3 id=&#34;related-research-areas&#34;&gt;Related Research Areas
+&lt;/h3&gt;&lt;p&gt;文章最後作者舉例跟主動式學習相關的領域研究。包括:Semi-Supervised Learning、Reinforcement Learing、Equivalence Query Learning、Active Class Selection、Active Feature Acquisition and Classification和Modal Parroting and Compression。&lt;/p&gt;
+&lt;h2 id=&#34;結果與討論&#34;&gt;結果與討論
+&lt;/h2&gt;&lt;p&gt;這篇文章寫於2009年，作者以當時現有的研究與文獻對於主動式學習做了一個通盤的整理與歸納，使得像是我們這般初學者可以更快的對於這個領域有概括性的了解。作者亦對於不同的領域提出想法與總結，讓我們更快切入重點。其中出現了許多不同的概念，我在上網查找資料時學到很多，更發現網路上關於主動式學習的文章大多引用了這篇文獻。文章中的列舉和說明，與最後的參考文獻，也指引了往不同方向研究的標竿。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>My LaTeX user guide</title>
+        <link>http://localhost:1313/JSian.github.io/zh/p/my-latex-user-guide/</link>
+        <pubDate>Fri, 20 Jan 2023 15:54:21 +0800</pubDate>
+        
+        <guid>http://localhost:1313/JSian.github.io/zh/p/my-latex-user-guide/</guid>
+        <description>&lt;img src="http://localhost:1313/JSian.github.io/zh/p/my-latex-user-guide/cover.jpg" alt="Featured image of post My LaTeX user guide" /&gt;&lt;style&gt;
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;my-latex-user-guide&#34;&gt;My LaTeX user guide
+&lt;/h1&gt;&lt;p&gt;我的操作環境是安裝&lt;a class=&#34;link&#34; href=&#34;https://tug.org/texlive/acquire-netinstall.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;texlive&lt;/a&gt;，並使用VSCode擴充&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LaTeX Workshop&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;latex&#34;&gt;LaTeX
+&lt;/h2&gt;&lt;p&gt;LaTeX 是&lt;span class=&#34;red&#34;&gt;標記式語言(markup language)&lt;/span&gt;，運作方式與HTML類似，用標記來指定排版，文字大小、顏色等。&lt;/p&gt;
+&lt;p&gt;以下是最簡單的LaTeX原始碼:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\documentclass{article}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%宣告區
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{document}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    %本文區
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    My name is Sian!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;tex-文件---基本架構&#34;&gt;.tex 文件 - 基本架構
+&lt;/h2&gt;&lt;h3 id=&#34;設定文件類型&#34;&gt;設定文件類型
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\documentclass[options]{class_name}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;&lt;strong&gt;{class_name}&lt;/strong&gt;&lt;/span&gt; 為此篇文書的類型:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;class_name&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;說明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;article&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用來排版學術論文、學術報告等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;report&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;格式有文章結構，用來排版回顧類、長篇論文、報告&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;book&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;排版出版書籍&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;proc&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;學術論文模板&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;slides&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;簡報格式的文檔&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;moderncv&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用於個人簡歷&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;beamer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用於製作簡報&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;&lt;strong&gt;[options]&lt;/strong&gt;&lt;/span&gt; 為可選用參數(可省略):&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;options&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;說明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;10pt&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;字體大小，不輸入時預設為10pt&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;a4paper&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;紙張大小，預設為letterpaper，可選擇: a4paper、a5paper、b5paper、executivepaper 和 legalpaper&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;titlepage&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;是否有標題頁，article預設為notitlepage，report和book預設為titlepage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;landscape&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;令排版方向為橫向，不輸入時預設為縱向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;onecolumn&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;令單雙欄排版，預設為onecolumn，可選擇: twocolumn&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;fleqn&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;令公式向左對齊，不輸入時預設置中&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;leqno&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;令公式編號在左，不輸入時預設在右&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;final&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;文稿模式，預設為final(終稿)，可選擇: draft(草稿)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;oneside&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;單雙面，預設為單面(oneside)，可選擇: twoside&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;宣告區-中文輸入使用方法&#34;&gt;宣告區 (&lt;span class=&#34;red&#34;&gt;中文輸入使用方法&lt;/span&gt;)
+&lt;/h3&gt;&lt;p&gt;宣告區用於宣告使用的宏包(類似函式庫)、文章基本資訊與特殊功能(未來備註)。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%宣告使用宏包
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{ctex}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{package_name} 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%文章基本資訊
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\title{ 標題名稱 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author{ 作者名稱 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\date{ \today }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;&lt;strong&gt;xeCJK&lt;/strong&gt; 為一支持中文編輯的宏包&lt;/span&gt;，允許在文檔中使用中文，且支援許多中文字體(詳情看範例)。以下為使用字體範例:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{document}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    %中括號內打上使用字體(到電腦&amp;#34;字型&amp;#34;設定查詢)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \newCJKfontfamily{\Kai}{標楷體}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \setCJKmainfont{標楷體}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;使用&lt;strong&gt;xeCJK&lt;/strong&gt;時:&lt;/span&gt;
+使用XeLaTeX編譯，XeLaTeX是一種使用Unicode的LaTeX排版引擎，預設輸入文件以utf-8編碼。使用命令 &lt;em&gt;xelatex .tex&lt;/em&gt; 編譯產生PDF文件。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;文章基本資訊&lt;/strong&gt;可以設定&lt;span class=&#34;blue&#34;&gt;文章標題(\title)&lt;/span&gt;、&lt;span class=&#34;blue&#34;&gt;作者(\author)&lt;/span&gt;與&lt;span class=&#34;blue&#34;&gt;日期(\date)&lt;/span&gt;等。&lt;span class=&#34;blue&#34;&gt;\and&lt;/span&gt; 用於連接每個作者，&lt;span class=&#34;blue&#34;&gt;\thanks&lt;/span&gt;命令會產生一個對應的腳註，用以致謝或標註聯絡方式。在文本區使用 &lt;strong&gt;\maketitle&lt;/strong&gt; 即可產生標題。見範例:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\documentclass[UTF8]{article}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%宣告使用宏包
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{xeCJK}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%文章基本資訊
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\title{ 成大校狗研究報告 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author{ 乖乖黃 \\ 國立成功大學, 雲平幫
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\and 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;白臉\thanks{E-mail} \\ 國立成功大學, 雲平幫 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\and 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;呆呆 \\ 國立成功大學, 自強三傻
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\and
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;麵線 \\ 國立成功大學, 自強三傻
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\and
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;米香 \\ 國立成功大學, 自強三傻 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\date{ \today }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{document}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    %本文區
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \maketitle
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    My name is Sian!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;輸出結果:
+&lt;img src=&#34;https://i.imgur.com/6IVie10.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;利用&lt;span class=&#34;blue&#34;&gt;&lt;strong&gt;authblk&lt;/strong&gt;宏包&lt;/span&gt;可以幫助標註多作者與研究單位，中括號 ([*]) 可幫作者與研究單位編號對應。在文本區使用 &lt;strong&gt;\maketitle&lt;/strong&gt; 即可產生標題。見範例:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\documentclass[UTF8]{article}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%宣告使用宏包
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{xeCJK}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{authblk}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%文章基本資訊
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\title{ 成大校狗研究報告 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author[1]{ 乖乖黃 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author[2]{ 白臉 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author[3]{ 呆呆 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author[4]{ 麵線 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\author[5]{ 米香 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\affil[1,2]{ 雲平幫 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\affil[3,4,5]{ 自強三傻 }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\date{ \today }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{document}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    %本文區
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \maketitle
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    My name is Sian!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;輸出結果:
+&lt;img src=&#34;https://i.imgur.com/yjQyssY.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其實&lt;strong&gt;文章基本資訊&lt;/strong&gt;也可以打在本文區。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;本文區-包括一些命令&#34;&gt;本文區 (包括一些命令)
+&lt;/h3&gt;&lt;p&gt;待續&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;beamer-如何利用latex製作簡報&#34;&gt;Beamer: 如何利用LaTeX製作簡報
+&lt;/h2&gt;&lt;p&gt;參考&amp;quot;自用Beamer Theme&amp;quot;。(待補)&lt;/p&gt;
+&lt;h1 id=&#34;數學公式參考&#34;&gt;數學公式參考
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/us6PNv0.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://i.imgur.com/DDqcsDH.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://i.imgur.com/nd2Qzuh.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://i.imgur.com/uc0hpvK.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

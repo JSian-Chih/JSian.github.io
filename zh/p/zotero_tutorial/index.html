@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><script src="/JSian.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=JSian.github.io/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" My Zotero user guide\rSetup Zotero\rInstall Zotero 6 for Windows\r安裝 Zotero。 按 &ldquo;Next&rdquo;。 選擇 &ldquo;Custom&rdquo; ，按 &ldquo;Next&rdquo;。 ">
+<title>My Zotero user guide</title>
+
+<link rel='canonical' href='http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/'>
+
+<link rel="stylesheet" href="/JSian.github.io/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="My Zotero user guide">
+<meta property='og:description' content=" My Zotero user guide\rSetup Zotero\rInstall Zotero 6 for Windows\r安裝 Zotero。 按 &ldquo;Next&rdquo;。 選擇 &ldquo;Custom&rdquo; ，按 &ldquo;Next&rdquo;。 ">
+<meta property='og:url' content='http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/'>
+<meta property='og:site_name' content='Sian&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Zotero' /><meta property='article:tag' content='文書管理' /><meta property='article:published_time' content='2024-04-24T13:28:33&#43;08:00'/><meta property='article:modified_time' content='2024-04-24T13:28:33&#43;08:00'/><meta property='og:image' content='http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/cover.jpg' />
+<meta name="twitter:title" content="My Zotero user guide">
+<meta name="twitter:description" content=" My Zotero user guide\rSetup Zotero\rInstall Zotero 6 for Windows\r安裝 Zotero。 按 &ldquo;Next&rdquo;。 選擇 &ldquo;Custom&rdquo; ，按 &ldquo;Next&rdquo;。 "><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/JSian.github.io/zh/p/zotero_tutorial/cover.jpg' />
+    <link rel="shortcut icon" href="/JSian.github.io/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/JSian.github.io/zh/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/JSian.github.io/img/AXReMHj_hu_be8d0aca21806444.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/JSian.github.io/zh">Sian&#39;s Blog</a></h1>
+            <h2 class="site-description">わが征くは星の大海</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/JSian-Chih'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/'
+                        target="_blank"
+                        title="Linkedin"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/en' >
+                
+                
+                
+                <span>English Articles</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/JSian.github.io/zh/" selected>中文</option>
+                                
+                                    <option value="http://localhost:1313/JSian.github.io/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#setup-zotero">Setup Zotero</a>
+      <ol>
+        <li><a href="#install-zotero-6-for-windows">Install Zotero 6 for Windows</a></li>
+        <li><a href="#apply-the-account-of-zotero">Apply the account of zotero</a></li>
+        <li><a href="#zotero-literature-database">Zotero literature database</a></li>
+        <li><a href="#import-the-literature-data-and-document">Import the literature data and document</a></li>
+        <li><a href="#add-on-zotfile-advanced-pdf-management-for-zotero">Add-on: ZotFile, Advanced PDF management for Zotero</a></li>
+      </ol>
+    </li>
+    <li><a href="#zotero--infinicloud-tutorial">Zotero + Infinicloud Tutorial</a>
+      <ol>
+        <li><a href="#why-infinicloud">Why Infinicloud?</a></li>
+        <li><a href="#apply-the-account-of-infinicloud">Apply the account of Infinicloud</a></li>
+        <li><a href="#apps-connection-webdav">Apps Connection (WebDAV)</a></li>
+        <li><a href="#connect-to-zotero">Connect to Zotero</a></li>
+      </ol>
+    </li>
+    <li><a href="#using-zotero-with-latex">Using Zotero with LaTeX</a>
+      <ol>
+        <li><a href="#add-on-better-bibtex-easier-to-manage-bibliographic-data">Add-on: better Bibtex, Easier to manage bibliographic data</a></li>
+        <li><a href="#better-bibtex-setup">better BibTex Setup</a></li>
+      </ol>
+    </li>
+    <li><a href="#using-zotero-with-word">Using Zotero with Word</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/JSian.github.io/zh/p/zotero_tutorial/">
+                <img src="/JSian.github.io/zh/p/zotero_tutorial/cover_hu_52c2fd20cea33c03.jpg"
+                        srcset="/JSian.github.io/zh/p/zotero_tutorial/cover_hu_52c2fd20cea33c03.jpg 800w, /JSian.github.io/zh/p/zotero_tutorial/cover_hu_47e00f0ff61c69d7.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post My Zotero user guide" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/JSian.github.io/zh/categories/programming/" >
+                Programming
+            </a>
+        
+            <a href="/JSian.github.io/zh/categories/writing/" >
+                Writing
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/JSian.github.io/zh/p/zotero_tutorial/">My Zotero user guide</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">4月 24, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <style>
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+</style>
+<h1 id="my-zotero-user-guide">My Zotero user guide
+</h1><h2 id="setup-zotero">Setup Zotero
+</h2><h3 id="install-zotero-6-for-windows">Install Zotero 6 for Windows
+</h3><ol>
+<li>安裝 <a class="link" href="https://www.zotero.org/download/"  target="_blank" rel="noopener"
+    >Zotero</a>。</li>
+</ol>
+<p><img src="https://imgur.com/CgA0t9s.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Imgur"
+	
+	
+></p>
+<ol start="2">
+<li>按 &ldquo;Next&rdquo;。</li>
+</ol>
+<p><img src="https://i.imgur.com/csu3Ia7.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="3">
+<li>選擇 &ldquo;Custom&rdquo; ，按 &ldquo;Next&rdquo;。</li>
+</ol>
+<p><img src="https://i.imgur.com/GSn1XRk.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="imag"
+	
+	
+></p>
+<ol start="4">
+<li>設定安裝路徑後，按 &ldquo;Next&rdquo;。</li>
+</ol>
+<p><img src="https://i.imgur.com/pxcDL9q.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<ol start="5">
+<li>按 &ldquo;Next&rdquo;。</li>
+</ol>
+<p><img src="https://i.imgur.com/Vy3IEHv.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="6">
+<li>按 &ldquo;Install&rdquo; 並等待安裝完成。</li>
+</ol>
+<p><img src="https://i.imgur.com/AwUB2jc.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<h3 id="apply-the-account-of-zotero">Apply the account of zotero
+</h3><ol>
+<li>進到 <a class="link" href="https://www.zotero.org/user/register"  target="_blank" rel="noopener"
+    >zotero 註冊畫面</a> 申請帳號。</li>
+</ol>
+<h3 id="zotero-literature-database">Zotero literature database
+</h3><ol>
+<li>啟動 Zotero，點選 &ldquo;Edit&rdquo; -&gt; &ldquo;Preference&rdquo;。到 Zotero Preferences。</li>
+</ol>
+<p><img src="https://i.imgur.com/QJ6DMAK.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="2">
+<li>選擇 &ldquo;Sync&rdquo;，並登入。</li>
+</ol>
+<p><img src="https://i.imgur.com/F9d8b1K.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image alt"
+	
+	
+></p>
+<ol start="3">
+<li>此處可以選擇資料的同步模式。一種是 &ldquo;Zotero&rdquo;，利用Zotero 官方提供的雲端空間同步；另一種是使用 &ldquo;WebDAV&rdquo;，請參考後面的教學。</li>
+</ol>
+<p><img src="https://i.imgur.com/8U8wK6k.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ol start="4">
+<li>按下右上角的整理符號即可同步資料。</li>
+</ol>
+<p><img src="https://i.imgur.com/yGvf8Et.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<h3 id="import-the-literature-data-and-document">Import the literature data and document
+</h3><p>關於如何將網路上的資源加入Zotero 的 library。除了直接將pdf文件拖曳進入 Zotero外，Zotero 提供了相關的瀏覽器插件，可以直接從線上文獻資料庫匯入Zotero。詳情請參考: <a class="link" href="https://www.zotero.org/support/adding_items_to_zotero"  target="_blank" rel="noopener"
+    >Adding Items to Zotero</a></p>
+<h3 id="add-on-zotfile-advanced-pdf-management-for-zotero">Add-on: ZotFile, Advanced PDF management for Zotero
+</h3><p>這裡將介紹Zotero 的開源插件「ZotFile」。ZotFile 可以幫助我們完成自定義的項目重命名，文件與行動裝置的同步編輯等問題。推薦安裝。</p>
+<ol>
+<li>
+<p>進入 <a class="link" href="http://zotfile.com/"  target="_blank" rel="noopener"
+    >ZotFile</a>網站點選下載。將會下載到一個 Zotfile 的插件檔案。</p>
+</li>
+<li>
+<p>回到Zotero 中，點選&quot;Tools&quot; -&gt; &ldquo;Add-ons&rdquo;。</p>
+</li>
+</ol>
+<p><img src="https://i.imgur.com/Jw2fdCZ.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="img"
+	
+	
+></p>
+<ol start="3">
+<li>將先前下載到的插件檔案拖曳進來，按下&quot;install now&quot;，並重新開啟Zotero。就安裝完成了!</li>
+</ol>
+<p><img src="https://i.imgur.com/VAtVokj.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ol start="4">
+<li>ZotFile提供了許多設置選項。選擇 &ldquo;Tools&rdquo; -&gt; &ldquo;ZotFile preferences&rdquo; 。</li>
+</ol>
+<p><img src="https://i.imgur.com/OsOSFeO.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<ol start="5">
+<li>其中比較廣泛會用到的功能就是自動命名。可以參考:<a class="link" href="http://zotfile.com/index.html#renaming-rules"  target="_blank" rel="noopener"
+    >Renaming Rules</a></li>
+</ol>
+<p><img src="https://i.imgur.com/xK0vygY.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="zotero--infinicloud-tutorial">Zotero + Infinicloud Tutorial
+</h2><h3 id="why-infinicloud">Why Infinicloud?
+</h3><p>這個部分將介紹如何完成Zotero跨平台與裝置的同步。如先前提到的，我們可以利用Zotero的雲端空間進行資料處存與同步。但免費版本空間有限，要做到大量資料與pdf檔案的同步就需要用到另一種方式:「WebDAV」。Infinicloud (其前身為 Teracloud) 是一個由日本公司提供的雲端服務，且支援WebDAV。</p>
+<h3 id="apply-the-account-of-infinicloud">Apply the account of Infinicloud
+</h3><ol>
+<li>進入 <a class="link" href="https://infini-cloud.net/en/index.html"  target="_blank" rel="noopener"
+    >Infinicloud 官網</a>，首先申請一個 Infinicloud 帳號。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1.jpg"
+	width="1018"
+	height="411"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hu_e75af8c5000409af.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud1_hu_101756c3105624c4.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="247"
+		data-flex-basis="594px"
+	
+></p>
+<ol>
+<li>輸入資料與email，接收驗證碼並驗證。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2.jpg"
+	width="717"
+	height="844"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_hu_3eb580841e55ed8d.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud2_hu_f93294e44d1c223a.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="84"
+		data-flex-basis="203px"
+	
+></p>
+<h3 id="apps-connection-webdav">Apps Connection (WebDAV)
+</h3><ol>
+<li>登入 Infinicloud 帳號後，進入 「My Page」。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3.jpg"
+	width="1856"
+	height="678"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu_cf4e9434ec304691.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud3_hu_7ad7e16ee00e3e06.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="273"
+		data-flex-basis="656px"
+	
+></p>
+<ol>
+<li>到 Apps Connection，勾選「Turn on Apps Connection」。並將 WebDAV Connection URL 和 Apps Password 記下。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4.jpg"
+	width="1005"
+	height="275"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hu_29c7cc5a3ba9eb5a.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud4_hu_3fb016bb9b00d53b.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="365"
+		data-flex-basis="877px"
+	
+></p>
+<blockquote>
+<p><span class="red">Apps Password 只會出現一次</span>，每次按下「Reissue」都會更新密碼。已登入WebDAV 的「所有系統」都要重新輸入 Password。</p></blockquote>
+<h3 id="connect-to-zotero">Connect to Zotero
+</h3><ol>
+<li>回到 Zotero，點選 Edit -&gt; Preferences。到 Zotero Preferences。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5.jpg"
+	width="272"
+	height="258"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu_da65646c2c5d2df3.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud5_hu_8724f2073e145562.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="105"
+		data-flex-basis="253px"
+	
+></p>
+<ol>
+<li>點選 Sync，勾選 File Syncing ，選擇「WebDAV」。並在此輸入在 Infinicloud 中得到的 WebDAV Connection URL、帳號和 Apps Password。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6.jpg"
+	width="611"
+	height="722"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu_8a2721a54b990701.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud6_hu_2453522288faa227.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="84"
+		data-flex-basis="203px"
+	
+></p>
+<ol>
+<li>按下 「Verify Server」確認連線成功。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7.jpg"
+	width="354"
+	height="142"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu_4570b0552a15d099.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/infinicloud7_hu_1836ff7000716bef.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="249"
+		data-flex-basis="598px"
+	
+></p>
+<p>至此，Zotero 儲存的文件已可自動同步至 Infinicloud 中。無論在手機、平板或另一台電腦上，只要在 Zotero 設定同樣的 WebDAV Connection URL、帳號和 Apps Password，資料即可同步。</p>
+<h2 id="using-zotero-with-latex">Using Zotero with LaTeX
+</h2><p>在 Zotero 中，我們可以收集並閱讀各種文獻。在撰寫論文時我們必須在文章中引用文獻，而 LaTeX 必須產生 BibTex 文件。此段落介紹如何利用 Zotero 產生 BibTex 文件。</p>
+<ol>
+<li>選定要輸出的文獻後右鍵，並點選「Export items」。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1.jpg"
+	width="1314"
+	height="633"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hu_3ade00d8f44c6b40.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BibTex1_hu_e4a2dd9805ac1a5.jpg 1024w"
+	loading="lazy"
+	
+		alt="選定特定文獻後右鍵"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="207"
+		data-flex-basis="498px"
+	
+></p>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2.jpg"
+	width="1310"
+	height="607"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_hu_a19fb5cb94e2da12.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BibTex2_hu_4ceafae2349b83f7.jpg 1024w"
+	loading="lazy"
+	
+		alt="直接在 Collection 右鍵"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="215"
+		data-flex-basis="517px"
+	
+></p>
+<ol start="2">
+<li>選定 Format 為「BibTex」。並點選 OK。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3.jpg"
+	width="279"
+	height="331"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu_45c6657f208f0898.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BibTex3_hu_a998bf3bdedd1446.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="84"
+		data-flex-basis="202px"
+	
+></p>
+<ol start="3">
+<li>Zotero 會自動根據文獻的作者、題目、內容與類型輸出相應的 BibTex 檔案。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4.jpg"
+	width="218"
+	height="35"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu_a1b67f5665ae6f2d.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BibTex4_hu_caff5c845ed907e2.jpg 1024w"
+	loading="lazy"
+	
+		alt="BibTex 檔案"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="622"
+		data-flex-basis="1494px"
+	
+></p>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5.jpg"
+	width="943"
+	height="418"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu_286ee3674d36fecc.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BibTex5_hu_de29178d1b6d85f.jpg 1024w"
+	loading="lazy"
+	
+		alt="BibTex 檔案內容"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="225"
+		data-flex-basis="541px"
+	
+></p>
+<h3 id="add-on-better-bibtex-easier-to-manage-bibliographic-data">Add-on: better Bibtex, Easier to manage bibliographic data
+</h3><p>「better Bibtex」為一個幫助我們更好的管理並輸出 BibTex 檔案的插件。</p>
+<ol>
+<li>到 <a class="link" href="https://github.com/retorquere/zotero-better-bibtex/releases"  target="_blank" rel="noopener"
+    >「better Bibtex」的 GitHub</a> 下載檔案。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1.jpg"
+	width="1147"
+	height="362"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu_2dda20ac50f93d29.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib1_hu_fabee567a0fe57b3.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="316"
+		data-flex-basis="760px"
+	
+></p>
+<ol start="2">
+<li>如同文章上述提到的方式，將下載的插件檔案匯入 Zotero 並重啟 Zotero。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2.jpg"
+	width="875"
+	height="320"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu_95f1ba63318e5f4b.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib2_hu_7e6cc4ad204b0280.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="273"
+		data-flex-basis="656px"
+	
+></p>
+<h3 id="better-bibtex-setup">better BibTex Setup
+</h3><p>配合「better BibTex」，此處介紹一些方便的設定。</p>
+<ol>
+<li>開啟 Tools -&gt; Better BibTex -&gt; Open Better BibTex preferences。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3.jpg"
+	width="652"
+	height="277"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu_392004c169531504.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib3_hu_51b5fa6ade704dc2.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="564px"
+	
+></p>
+<ol start="2">
+<li>「Citation Key」的部分可以設定 LaTeX 中使用的「Citation Key」格式。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4.jpg"
+	width="758"
+	height="599"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hu_18f4e1da5e9ab571.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib4_hu_88c50cdbb8164535.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="303px"
+	
+></p>
+<ol start="3">
+<li>「Export」 -&gt; Fields 中，在 Fields to omit from export 中輸入<code>note,file,abstract</code>。此設定使得在輸出 BibTex 格式時，忽略筆記、檔案與摘要資訊。</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5.jpg"
+	width="756"
+	height="604"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu_a73efeca2069b094.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib5_hu_1c240dd0ef56de44.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="125"
+		data-flex-basis="300px"
+	
+></p>
+<ol start="4">
+<li>到 Zotero Preferences 中的 Export。「Item Format」部分可以設定「Quick Copy」的格式。此處設定好後，點選相應的文件並使用預設快捷鍵<code>Ctrl+Shift+C</code>可以快速複製 BibTex 格式在剪貼簿(Clipboard)上，並直接在使用<code>Ctrl+V</code> 貼到其他文字檔案或 BibTex 檔案上。(也可以直接左鍵拖曳)</li>
+</ol>
+<p><img src="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6.jpg"
+	width="667"
+	height="747"
+	srcset="/JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu_974c775692d7cb72.jpg 480w, /JSian.github.io/zh/p/zotero_tutorial/images/BetterBib6_hu_33a394abedcbcf6a.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="89"
+		data-flex-basis="214px"
+	
+></p>
+<h2 id="using-zotero-with-word">Using Zotero with Word
+</h2><p>目前本人的工作流程是配合 LaTeX 與 Zotero。至於配合 Word 的方法要安裝相對應的 Plugin。此處 Zotero 的官網已提供相當完整的教學。在此附上連結:</p>
+<ol>
+<li>
+<p><a class="link" href="https://www.zotero.org/support/word_processor_plugin_manual_installation"  target="_blank" rel="noopener"
+    >https://www.zotero.org/support/word_processor_plugin_manual_installation</a></p>
+</li>
+<li>
+<p><a class="link" href="https://www.zotero.org/support/word_processor_plugin_usage"  target="_blank" rel="noopener"
+    >https://www.zotero.org/support/word_processor_plugin_usage</a></p>
+</li>
+</ol>
+<p>之後有遇到較複雜的問題再作補充說明。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/JSian.github.io/zh/tags/zotero/">Zotero</a>
+        
+            <a href="/JSian.github.io/zh/tags/%E6%96%87%E6%9B%B8%E7%AE%A1%E7%90%86/">文書管理</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title"></h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/paper-active-learning-literature-survey/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/paper-active-learning-literature-survey/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Paper: Active Learning Literature Survey"
+                        
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Paper: Active Learning Literature Survey</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/my-latex-user-guide/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/my-latex-user-guide/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My LaTeX user guide"
+                        
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My LaTeX user guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/lmi_matlab_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/lmi_matlab_tutorial/cover.e01d8a1e92bddb05aa826cc240f186e5_hu_72a0b92fa3bc21d8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My Matlab LMI Toolbox user guide"
+                        data-key="LMI_matlab_tutorial" 
+                        data-hash="md5-4B2KHpK92wWqgmzCQPGG5Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My Matlab LMI Toolbox user guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/vscode_latex_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/vscode_latex_tutorial/cover.42efcbce9a099b9cc2841f2d6448d476_hu_b491280ff2eb9cb8.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 搭建 VScode 的LaTeX 編寫環境"
+                        data-key="VScode_Latex_tutorial" 
+                        data-hash="md5-Qu/LzpoJm5zChB8tZEjUdg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">搭建 VScode 的LaTeX 編寫環境</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/JSian.github.io/zh/p/vscode_c_tutorial/">
+        
+        
+            <div class="article-image">
+                <img src="/JSian.github.io/zh/p/vscode_c_tutorial/cover.fcba1f48c089b9105cff16fde7d27334_hu_4d817a0978804a48.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)"
+                        data-key="VScode_C_tutorial" 
+                        data-hash="md5-/LofSMCJuRBc/xb959JzNA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43; programming with Visual Studio Code (Using gcc/g&#43;&#43; with MinGW)</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Sian&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.0d757de0886b07b57782e26f6d93118b0657e9c727f0639ed824b5ce9981b457.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
