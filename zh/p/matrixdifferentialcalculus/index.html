@@ -392,56 +392,56 @@
 </h2><p>在最佳化、機器學習、數值計算等領域，純量函數對向量或矩陣變數的偏導數是非常重要的數學工具。儘管純量對向量的 gradient 是常見的概念，但當變數為矩陣時，對其求導不僅需注意符號、維度的一致性，也須考慮鏈鎖律的使用方式與乘法的正確定義。</p>
 <p>本文將統一地介紹純量對向量與矩陣微分的定義，探討 gradient 與 Jacobian 之間的關係，並深入解析如何在此之上正確套用鏈鎖律，特別是為何必須使用 Frobenius 內積，而非傳統矩陣乘法。</p>
 <h2 id="純量對向量的微分與梯度gradient">純量對向量的微分與梯度（Gradient）
-</h2><p>令 $f : \mathbb{R}^n \to \mathbb{R}$ 為純量函數，$\mathbf{x} \in \mathbb{R}^n$ 為向量變數，其梯度定義為:
-[
+</h2><p>令 $f : \mathbb{R}^n \to \mathbb{R}$ 為純量函數，$\mathbf{x} \in \mathbb{R}^n$ 為向量變數，其梯度定義為:</p>
+<p>$$
 \nabla f = \frac{\partial f}{\partial \mathbf{x}} =
 \begin{bmatrix}
 \frac{\partial f}{\partial x_1} \
 \vdots \
 \frac{\partial f}{\partial x_n}
 \end{bmatrix} \in \mathbb{R}^{n \times 1}.
-]</p>
-<p>亦可採用 row gradient 表示:
-[
+$$</p>
+<p>亦可採用 row gradient 表示:</p>
+<p>$$
 \frac{\partial f}{\partial \mathbf{x}^\top} = (\nabla f)^\top \in \mathbb{R}^{1 \times n}.
-]</p>
+$$</p>
 <h2 id="純量對矩陣的偏微分">純量對矩陣的偏微分
-</h2><p>設 $f : \mathbb{R}^{m \times n} \to \mathbb{R}$，對於變數矩陣 $\mathbf{X} \in \mathbb{R}^{m \times n}$，偏導數定義為:
-[
+</h2><p>設 $f : \mathbb{R}^{m \times n} \to \mathbb{R}$，對於變數矩陣 $\mathbf{X} \in \mathbb{R}^{m \times n}$，偏導數定義為:</p>
+<p>$$
 \frac{\partial f}{\partial \mathbf{X}} = \begin{bmatrix}
 1 &amp; \cdots &amp; \frac{\partial f}{\partial X_{1n}} \
 \vdots &amp; \ddots &amp; \vdots \
 \frac{\partial f}{\partial X_{m1}} &amp; \cdots &amp; \frac{\partial f}{\partial X_{mn}}
 \end{bmatrix} \in \mathbb{R}^{m \times n}.
-]</p>
+$$</p>
 <p>此即 matrix gradient，結果與 $\mathbf{X}$ 同維度。此表示法在多變數最佳化問題中十分常見。</p>
 <h2 id="jacobian-與-gradient-的關係">Jacobian 與 Gradient 的關係
 </h2><p>若 $\mathbf{f} : \mathbb{R}^n \to \mathbb{R}^m$ 為向量函數，其 Jacobian 為:
-[
+$$
 \mathbf{J}(\mathbf{x}) = \frac{\partial \mathbf{f}}{\partial \mathbf{x}} =
 \begin{bmatrix}
 \frac{\partial f_1}{\partial x_1} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \
 \vdots &amp; \ddots &amp; \vdots \
 \frac{\partial f_m}{\partial x_1} &amp; \cdots &amp; \frac{\partial f_m}{\partial x_n}
 \end{bmatrix} \in \mathbb{R}^{m \times n}.
-]</p>
+$$</p>
 <p>可以發現，當 $m = 1$ 時，Jacobian 即為 gradient 的轉置。</p>
 <h2 id="純量函數對矩陣函數的鏈鎖律">純量函數對矩陣函數的鏈鎖律
 </h2><p>設 $f(\mathbf{Z}(X)) \in \mathbb{R}$，其中 $\mathbf{Z}(X) \in \mathbb{R}^{m \times n}$，$X \in \mathbb{R}$ 為純量，則鏈鎖律為:
-[
+$$
 \frac{df}{dX} = \sum_{i=1}^{m} \sum_{j=1}^{n} \frac{\partial f}{\partial Z_{ij}} \cdot \frac{dZ_{ij}}{dX}.
-]</p>
+$$</p>
 <p>可進一步寫為 Frobenius 內積:
-[
+$$
 \frac{df}{dX} = \left\langle \frac{\partial f}{\partial \mathbf{Z}}, \frac{d\mathbf{Z}}{dX} \right\rangle
 = \operatorname{tr}\left( \left( \frac{\partial f}{\partial \mathbf{Z}} \right)^\top \cdot \frac{d\mathbf{Z}}{dX} \right).
-]</p>
+$$</p>
 <h3 id="remark-為什麼不是使用單純的矩陣乘法">Remark: 為什麼不是使用單純的矩陣乘法？
 </h3><p>根據先前的推導可知 $\mathbf{A} = \frac{\partial f}{\partial \mathbf{Z}}$，$\mathbf{B} = \frac{d\mathbf{Z}}{dX}$，皆為 $m \times n$ 矩陣。則 $\mathbf{A}, \mathbf{B}$ 無法進行矩陣乘法。</p>
 <p>Frobenius 內積為定義上可行計算方式:
-[
+$$
 \langle \mathbf{A}, \mathbf{B} \rangle = \sum_{i=1}^{m} \sum_{j=1}^{n} A_{ij} B_{ij} = \operatorname{tr}(\mathbf{A}^\top \mathbf{B}).
-]
+$$
 利用矩陣 trace 的定義也可更容易進行計算與應用。</p>
 <h2 id="conclusion">Conclusion
 </h2><p>純量對向量與矩陣的微分是數學與應用中重要工具，尤其在牽涉有矩陣變數的鏈鎖律推導時，應正確使用 Frobenius 內積。這不僅保證推導維度正確，也提升數學表達的嚴謹性與邏輯一致性。</p>
@@ -486,6 +486,32 @@
         </span>
     </section></footer>
 
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
 
     
 </article>

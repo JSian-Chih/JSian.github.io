@@ -413,16 +413,16 @@
 <h1 id="my-matlab-lmi-toolbox-user-guide">My Matlab LMI Toolbox user guide
 </h1><h2 id="lmi-introduction">LMI Introduction
 </h2><p>利用線性矩陣不等式(Linear Matrix Inequalities, LMI)，我們可以求解許多控制上的問題。此處以本人的碩士論文有用到的 LMI 問題為例。考慮以下 LMI 問題:</p>
-<p>[
+<p>$$
 \begin{bmatrix}
 \mathbf{A}_0^T \mathbf{P} + \mathbf{P} \mathbf{A}_0 + \varepsilon \mathbf{F}^T \mathbf{F} + \mathbf{Q} &amp; \mathbf{P} \mathbf{E} \
 \mathbf{E}^T \mathbf{P} &amp; - \varepsilon \bm{\mu}^{-1}
 \end{bmatrix}
 &lt; 0
-]</p>
-<p>[
+$$</p>
+<p>$$
 \mathbf{P} = \mathbf{P}^T &gt; 0, \quad \mathbf{P} = \mathbf{P}^T &gt; 0 \quad, \varepsilon &gt; 0
-]</p>
+$$</p>
 <p>在 Matlab 中建立 LMI 系统模型，可以被拆解成四個部分:</p>
 <ol>
 <li>定義已知參數。(如: $\mathbf{A}_0$、$\mathbf{E}$、$\mathbf{F}$、$\bm{\mu}$)</li>
