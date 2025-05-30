@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw" dir="ltr">
+<html lang="zh" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
 <title>搜索</title>
@@ -40,7 +40,7 @@
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -248,7 +248,7 @@
 
 
 
-                        <span></span>
+                        <span>夜晚模式</span>
                     </li>
                 
             </ol>
@@ -259,11 +259,11 @@
             <main class="main full-width">
 <form action="/JSian.github.io/zh/search/" class="search-form"data-json="/JSian.github.io/zh/search/index.json">
     <p>
-        <label></label>
-        <input name="keyword" placeholder="" />
+        <label>搜尋</label>
+        <input name="keyword" placeholder="輸入關鍵字..." />
     </p>
 
-    <button title="">
+    <button title="搜尋">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
@@ -281,7 +281,7 @@
 </div>
 
 <script>
-    window.searchResultTitleTemplate = ""
+    window.searchResultTitleTemplate = "#PAGES_COUNT 個結果 （用時 #TIME_SECONDS 秒）"
 </script><script type="text/javascript" src="/JSian.github.io/ts/search.js" defer></script>
 
 <footer class="site-footer">
@@ -294,10 +294,12 @@
     </section>
     
     <section class="powerby">
-         <br />
-        
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
     </section>
 </footer>
+
+
 
 
             </main>

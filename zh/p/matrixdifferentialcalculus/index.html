@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="矩陣偏微分計算筆記">
+<title>矩陣偏微分計算筆記</title>
+
+<link rel='canonical' href='https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/'>
+
+<link rel="stylesheet" href="/JSian.github.io/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="矩陣偏微分計算筆記">
+<meta property='og:description' content="矩陣偏微分計算筆記">
+<meta property='og:url' content='https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/'>
+<meta property='og:site_name' content='Sian&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-05-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-05-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/cover.jpg' />
+<meta name="twitter:title" content="矩陣偏微分計算筆記">
+<meta name="twitter:description" content="矩陣偏微分計算筆記"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/cover.jpg' />
+    <link rel="shortcut icon" href="/JSian.github.io/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/JSian.github.io/zh/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/JSian.github.io/img/AXReMHj_hu_be8d0aca21806444.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/JSian.github.io/zh">Sian&#39;s Blog</a></h1>
+            <h2 class="site-description">わが征くは星の大海</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/JSian-Chih'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/chao-hsien-chih-6a49aa242/'
+                        target="_blank"
+                        title="Linkedin"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/zh/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/JSian.github.io/en' >
+                
+                
+                
+                <span>English Articles</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://jsian-chih.github.io/JSian.github.io/zh/" selected>中文</option>
+                                
+                                    <option value="https://jsian-chih.github.io/JSian.github.io/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>夜晚模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#純量對向量的微分與梯度gradient">純量對向量的微分與梯度（Gradient）</a></li>
+    <li><a href="#純量對矩陣的偏微分">純量對矩陣的偏微分</a></li>
+    <li><a href="#jacobian-與-gradient-的關係">Jacobian 與 Gradient 的關係</a></li>
+    <li><a href="#純量函數對矩陣函數的鏈鎖律">純量函數對矩陣函數的鏈鎖律</a>
+      <ol>
+        <li><a href="#remark-為什麼不是使用單純的矩陣乘法">Remark: 為什麼不是使用單純的矩陣乘法？</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#參考文獻">參考文獻</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/JSian.github.io/zh/p/matrixdifferentialcalculus/">
+                <img src="/JSian.github.io/zh/p/matrixdifferentialcalculus/cover_hu_52c2fd20cea33c03.jpg"
+                        srcset="/JSian.github.io/zh/p/matrixdifferentialcalculus/cover_hu_52c2fd20cea33c03.jpg 800w, /JSian.github.io/zh/p/matrixdifferentialcalculus/cover_hu_47e00f0ff61c69d7.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post 矩陣偏微分計算筆記" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/JSian.github.io/zh/categories/mathematics/" >
+                Mathematics
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/JSian.github.io/zh/p/matrixdifferentialcalculus/">矩陣偏微分計算筆記</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            矩陣偏微分計算筆記
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">5月 30, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    閱讀時間: 2 分鐘
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="純量對向量與矩陣的微分gradientjacobian-與鏈鎖律的探討">純量對向量與矩陣的微分、Gradient、Jacobian 與鏈鎖律的探討
+</h1><h2 id="introduction">Introduction
+</h2><p>在最佳化、機器學習、數值計算等領域，純量函數對向量或矩陣變數的偏導數是非常重要的數學工具。儘管純量對向量的 gradient 是常見的概念，但當變數為矩陣時，對其求導不僅需注意符號、維度的一致性，也須考慮鏈鎖律的使用方式與乘法的正確定義。</p>
+<p>本文將統一地介紹純量對向量與矩陣微分的定義，探討 gradient 與 Jacobian 之間的關係，並深入解析如何在此之上正確套用鏈鎖律，特別是為何必須使用 Frobenius 內積，而非傳統矩陣乘法。</p>
+<h2 id="純量對向量的微分與梯度gradient">純量對向量的微分與梯度（Gradient）
+</h2><p>令 $f : \mathbb{R}^n \to \mathbb{R}$ 為純量函數，$\mathbf{x} \in \mathbb{R}^n$ 為向量變數，其梯度定義為:
+[
+\nabla f = \frac{\partial f}{\partial \mathbf{x}} =
+\begin{bmatrix}
+\frac{\partial f}{\partial x_1} \
+\vdots \
+\frac{\partial f}{\partial x_n}
+\end{bmatrix} \in \mathbb{R}^{n \times 1}.
+]</p>
+<p>亦可採用 row gradient 表示:
+[
+\frac{\partial f}{\partial \mathbf{x}^\top} = (\nabla f)^\top \in \mathbb{R}^{1 \times n}.
+]</p>
+<h2 id="純量對矩陣的偏微分">純量對矩陣的偏微分
+</h2><p>設 $f : \mathbb{R}^{m \times n} \to \mathbb{R}$，對於變數矩陣 $\mathbf{X} \in \mathbb{R}^{m \times n}$，偏導數定義為:
+[
+\frac{\partial f}{\partial \mathbf{X}} = \begin{bmatrix}
+1 &amp; \cdots &amp; \frac{\partial f}{\partial X_{1n}} \
+\vdots &amp; \ddots &amp; \vdots \
+\frac{\partial f}{\partial X_{m1}} &amp; \cdots &amp; \frac{\partial f}{\partial X_{mn}}
+\end{bmatrix} \in \mathbb{R}^{m \times n}.
+]</p>
+<p>此即 matrix gradient，結果與 $\mathbf{X}$ 同維度。此表示法在多變數最佳化問題中十分常見。</p>
+<h2 id="jacobian-與-gradient-的關係">Jacobian 與 Gradient 的關係
+</h2><p>若 $\mathbf{f} : \mathbb{R}^n \to \mathbb{R}^m$ 為向量函數，其 Jacobian 為:
+[
+\mathbf{J}(\mathbf{x}) = \frac{\partial \mathbf{f}}{\partial \mathbf{x}} =
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} &amp; \cdots &amp; \frac{\partial f_1}{\partial x_n} \
+\vdots &amp; \ddots &amp; \vdots \
+\frac{\partial f_m}{\partial x_1} &amp; \cdots &amp; \frac{\partial f_m}{\partial x_n}
+\end{bmatrix} \in \mathbb{R}^{m \times n}.
+]</p>
+<p>可以發現，當 $m = 1$ 時，Jacobian 即為 gradient 的轉置。</p>
+<h2 id="純量函數對矩陣函數的鏈鎖律">純量函數對矩陣函數的鏈鎖律
+</h2><p>設 $f(\mathbf{Z}(X)) \in \mathbb{R}$，其中 $\mathbf{Z}(X) \in \mathbb{R}^{m \times n}$，$X \in \mathbb{R}$ 為純量，則鏈鎖律為:
+[
+\frac{df}{dX} = \sum_{i=1}^{m} \sum_{j=1}^{n} \frac{\partial f}{\partial Z_{ij}} \cdot \frac{dZ_{ij}}{dX}.
+]</p>
+<p>可進一步寫為 Frobenius 內積:
+[
+\frac{df}{dX} = \left\langle \frac{\partial f}{\partial \mathbf{Z}}, \frac{d\mathbf{Z}}{dX} \right\rangle
+= \operatorname{tr}\left( \left( \frac{\partial f}{\partial \mathbf{Z}} \right)^\top \cdot \frac{d\mathbf{Z}}{dX} \right).
+]</p>
+<h3 id="remark-為什麼不是使用單純的矩陣乘法">Remark: 為什麼不是使用單純的矩陣乘法？
+</h3><p>根據先前的推導可知 $\mathbf{A} = \frac{\partial f}{\partial \mathbf{Z}}$，$\mathbf{B} = \frac{d\mathbf{Z}}{dX}$，皆為 $m \times n$ 矩陣。則 $\mathbf{A}, \mathbf{B}$ 無法進行矩陣乘法。</p>
+<p>Frobenius 內積為定義上可行計算方式:
+[
+\langle \mathbf{A}, \mathbf{B} \rangle = \sum_{i=1}^{m} \sum_{j=1}^{n} A_{ij} B_{ij} = \operatorname{tr}(\mathbf{A}^\top \mathbf{B}).
+]
+利用矩陣 trace 的定義也可更容易進行計算與應用。</p>
+<h2 id="conclusion">Conclusion
+</h2><p>純量對向量與矩陣的微分是數學與應用中重要工具，尤其在牽涉有矩陣變數的鏈鎖律推導時，應正確使用 Frobenius 內積。這不僅保證推導維度正確，也提升數學表達的嚴謹性與邏輯一致性。</p>
+<h2 id="參考文獻">參考文獻
+</h2><ul>
+<li>Kaare B. Petersen and Michael S. Pedersen, <em>The Matrix Cookbook</em>, 2008.</li>
+<li>Jan R. Magnus and Heinz Neudecker, <em>Matrix Differential Calculus with Applications in Statistics and Econometrics</em>, 3rd Edition, Wiley, 2019.</li>
+<li>Terence Parr and Jeremy Howard, <em>Matrix Calculus for Deep Learning</em>, arXiv:1802.01528.</li>
+<li>Willi-Hans Steeb and Yorick Hardy, <em>Matrix Calculus and Kronecker Product</em>, World Scientific, 2017.</li>
+<li>Christopher M. Bishop, <em>Pattern Recognition and Machine Learning</em>, Springer, 2006.</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最後更新 5月 30, 2025 00:00 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Sian&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
+    </section>
+</footer>
+
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/JSian.github.io/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

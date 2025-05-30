@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mathematics on Sian&#39;s Blog</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/categories/mathematics/</link>
+        <description>Recent content in Mathematics on Sian&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh</language>
+        <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jsian-chih.github.io/JSian.github.io/zh/categories/mathematics/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>矩陣偏微分計算筆記</title>
+        <link>https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/</link>
+        <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/</guid>
+        <description>&lt;img src="https://jsian-chih.github.io/JSian.github.io/zh/p/matrixdifferentialcalculus/cover.jpg" alt="Featured image of post 矩陣偏微分計算筆記" /&gt;&lt;h1 id=&#34;純量對向量與矩陣的微分gradientjacobian-與鏈鎖律的探討&#34;&gt;純量對向量與矩陣的微分、Gradient、Jacobian 與鏈鎖律的探討
+&lt;/h1&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;在最佳化、機器學習、數值計算等領域，純量函數對向量或矩陣變數的偏導數是非常重要的數學工具。儘管純量對向量的 gradient 是常見的概念，但當變數為矩陣時，對其求導不僅需注意符號、維度的一致性，也須考慮鏈鎖律的使用方式與乘法的正確定義。&lt;/p&gt;
+&lt;p&gt;本文將統一地介紹純量對向量與矩陣微分的定義，探討 gradient 與 Jacobian 之間的關係，並深入解析如何在此之上正確套用鏈鎖律，特別是為何必須使用 Frobenius 內積，而非傳統矩陣乘法。&lt;/p&gt;
+&lt;h2 id=&#34;純量對向量的微分與梯度gradient&#34;&gt;純量對向量的微分與梯度（Gradient）
+&lt;/h2&gt;&lt;p&gt;令 $f : \mathbb{R}^n \to \mathbb{R}$ 為純量函數，$\mathbf{x} \in \mathbb{R}^n$ 為向量變數，其梯度定義為:
+[
+\nabla f = \frac{\partial f}{\partial \mathbf{x}} =
+\begin{bmatrix}
+\frac{\partial f}{\partial x_1} \
+\vdots \
+\frac{\partial f}{\partial x_n}
+\end{bmatrix} \in \mathbb{R}^{n \times 1}.
+]&lt;/p&gt;
+&lt;p&gt;亦可採用 row gradient 表示:
+[
+\frac{\partial f}{\partial \mathbf{x}^\top} = (\nabla f)^\top \in \mathbb{R}^{1 \times n}.
+]&lt;/p&gt;
+&lt;h2 id=&#34;純量對矩陣的偏微分&#34;&gt;純量對矩陣的偏微分
+&lt;/h2&gt;&lt;p&gt;設 $f : \mathbb{R}^{m \times n} \to \mathbb{R}$，對於變數矩陣 $\mathbf{X} \in \mathbb{R}^{m \times n}$，偏導數定義為:
+[
+\frac{\partial f}{\partial \mathbf{X}} = \begin{bmatrix}
+1 &amp;amp; \cdots &amp;amp; \frac{\partial f}{\partial X_{1n}} \
+\vdots &amp;amp; \ddots &amp;amp; \vdots \
+\frac{\partial f}{\partial X_{m1}} &amp;amp; \cdots &amp;amp; \frac{\partial f}{\partial X_{mn}}
+\end{bmatrix} \in \mathbb{R}^{m \times n}.
+]&lt;/p&gt;
+&lt;p&gt;此即 matrix gradient，結果與 $\mathbf{X}$ 同維度。此表示法在多變數最佳化問題中十分常見。&lt;/p&gt;
+&lt;h2 id=&#34;jacobian-與-gradient-的關係&#34;&gt;Jacobian 與 Gradient 的關係
+&lt;/h2&gt;&lt;p&gt;若 $\mathbf{f} : \mathbb{R}^n \to \mathbb{R}^m$ 為向量函數，其 Jacobian 為:
+[
+\mathbf{J}(\mathbf{x}) = \frac{\partial \mathbf{f}}{\partial \mathbf{x}} =
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_1}{\partial x_n} \
+\vdots &amp;amp; \ddots &amp;amp; \vdots \
+\frac{\partial f_m}{\partial x_1} &amp;amp; \cdots &amp;amp; \frac{\partial f_m}{\partial x_n}
+\end{bmatrix} \in \mathbb{R}^{m \times n}.
+]&lt;/p&gt;
+&lt;p&gt;可以發現，當 $m = 1$ 時，Jacobian 即為 gradient 的轉置。&lt;/p&gt;
+&lt;h2 id=&#34;純量函數對矩陣函數的鏈鎖律&#34;&gt;純量函數對矩陣函數的鏈鎖律
+&lt;/h2&gt;&lt;p&gt;設 $f(\mathbf{Z}(X)) \in \mathbb{R}$，其中 $\mathbf{Z}(X) \in \mathbb{R}^{m \times n}$，$X \in \mathbb{R}$ 為純量，則鏈鎖律為:
+[
+\frac{df}{dX} = \sum_{i=1}^{m} \sum_{j=1}^{n} \frac{\partial f}{\partial Z_{ij}} \cdot \frac{dZ_{ij}}{dX}.
+]&lt;/p&gt;
+&lt;p&gt;可進一步寫為 Frobenius 內積:
+[
+\frac{df}{dX} = \left\langle \frac{\partial f}{\partial \mathbf{Z}}, \frac{d\mathbf{Z}}{dX} \right\rangle
+= \operatorname{tr}\left( \left( \frac{\partial f}{\partial \mathbf{Z}} \right)^\top \cdot \frac{d\mathbf{Z}}{dX} \right).
+]&lt;/p&gt;
+&lt;h3 id=&#34;remark-為什麼不是使用單純的矩陣乘法&#34;&gt;Remark: 為什麼不是使用單純的矩陣乘法？
+&lt;/h3&gt;&lt;p&gt;根據先前的推導可知 $\mathbf{A} = \frac{\partial f}{\partial \mathbf{Z}}$，$\mathbf{B} = \frac{d\mathbf{Z}}{dX}$，皆為 $m \times n$ 矩陣。則 $\mathbf{A}, \mathbf{B}$ 無法進行矩陣乘法。&lt;/p&gt;
+&lt;p&gt;Frobenius 內積為定義上可行計算方式:
+[
+\langle \mathbf{A}, \mathbf{B} \rangle = \sum_{i=1}^{m} \sum_{j=1}^{n} A_{ij} B_{ij} = \operatorname{tr}(\mathbf{A}^\top \mathbf{B}).
+]
+利用矩陣 trace 的定義也可更容易進行計算與應用。&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;純量對向量與矩陣的微分是數學與應用中重要工具，尤其在牽涉有矩陣變數的鏈鎖律推導時，應正確使用 Frobenius 內積。這不僅保證推導維度正確，也提升數學表達的嚴謹性與邏輯一致性。&lt;/p&gt;
+&lt;h2 id=&#34;參考文獻&#34;&gt;參考文獻
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Kaare B. Petersen and Michael S. Pedersen, &lt;em&gt;The Matrix Cookbook&lt;/em&gt;, 2008.&lt;/li&gt;
+&lt;li&gt;Jan R. Magnus and Heinz Neudecker, &lt;em&gt;Matrix Differential Calculus with Applications in Statistics and Econometrics&lt;/em&gt;, 3rd Edition, Wiley, 2019.&lt;/li&gt;
+&lt;li&gt;Terence Parr and Jeremy Howard, &lt;em&gt;Matrix Calculus for Deep Learning&lt;/em&gt;, arXiv:1802.01528.&lt;/li&gt;
+&lt;li&gt;Willi-Hans Steeb and Yorick Hardy, &lt;em&gt;Matrix Calculus and Kronecker Product&lt;/em&gt;, World Scientific, 2017.&lt;/li&gt;
+&lt;li&gt;Christopher M. Bishop, &lt;em&gt;Pattern Recognition and Machine Learning&lt;/em&gt;, Springer, 2006.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
